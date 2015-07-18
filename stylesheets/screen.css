@@ -97,6 +97,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin: 20px auto 0 auto;
   display: block;
 }
+/* line 36, ../sass/_header.scss */
+#header .date {
+  text-align: center;
+  width: 25%;
+  margin: -200px auto 0 auto;
+}
 
 /* line 1, ../sass/_text.scss */
 h1 {
@@ -113,3 +119,67 @@ h2 {
   text-transform: uppercase;
   color: #dfc59e;
 }
+
+/* line 15, ../sass/_text.scss */
+h3 {
+  font-family: 'Josefin Slab', serif;
+  font-size: 40px;
+  color: #671c3a;
+}
+
+/* line 1, ../sass/_our-story.scss */
+#our-story {
+  margin: 300px auto 0 auto;
+  width: 80%;
+}
+/* line 5, ../sass/_our-story.scss */
+#our-story .our-story-list {
+  list-style-type: none;
+  margin: 100px 0 0 0;
+}
+/* line 9, ../sass/_our-story.scss */
+#our-story .our-story-list li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0 1%;
+  width: 17%;
+}
+/* line 15, ../sass/_our-story.scss */
+#our-story .our-story-list li .story-img {
+  background: orange;
+  width: 100%;
+  height: 200px;
+}
+
+/* line 1, ../sass/_about-us.scss */
+#about-us {
+  background: #fbf7f5;
+  margin: 100px 0 0 0;
+  padding: 100px 0 0 0;
+}
+/* line 6, ../sass/_about-us.scss */
+#about-us .inner {
+  width: 80%;
+  margin: 0 auto 0 auto;
+}
+/* line 10, ../sass/_about-us.scss */
+#about-us .inner .about-us-list {
+  list-style-type: none;
+  margin: 100px 0 0 0;
+  text-align: center;
+}
+/* line 15, ../sass/_about-us.scss */
+#about-us .inner .about-us-list li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0 1%;
+  width: 40%;
+}
+/* line 21, ../sass/_about-us.scss */
+#about-us .inner .about-us-list li .story-img {
+  background: orange;
+  width: 100%;
+  height: 200px;
+}
+
+/*about-us*/
