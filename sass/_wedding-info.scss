@@ -1,0 +1,59 @@
+#wedding-info {
+  width: 80%;
+  margin: 100px auto 0 auto;
+
+  .temple {
+    width: 100%;
+    margin: 100px 0 0 0;
+
+  }/*temple*/
+
+  .event-boxes {
+    width: 60%;
+    text-align: center;
+    margin: 100px auto 0 auto;
+
+    li {
+      display: inline-block;
+      padding: 10px 0;
+      margin:0 2%;
+      width: 28%;
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 24px;
+      font-weight: 100;
+      color: #a6cac1;
+    }/*li*/
+
+    .highlight-box {
+      background: #a6cac1;
+      color: white;
+
+    }
+
+  }/*event-boxes*/
+
+  .sealing-info {
+    width: 100%;
+    text-align: center;
+    margin: 100px 0 0 0;
+
+    li {
+      display: inline-block;
+      vertical-align: top;
+      margin: 0 5%;
+
+    }/*li*/
+
+  }/*sealing-info*/
+
+  .where-when {
+    text-align: left;
+
+    h4 {
+      padding: 0 0 20px 0;
+
+    }
+
+  }
+
+}/*wedding-info*/

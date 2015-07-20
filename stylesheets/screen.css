@@ -78,26 +78,27 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   color: #a6cac1;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 24px;
+  font-weight: 100;
   margin: 100px auto 0 auto;
   text-align: center;
 }
-/* line 17, ../sass/_header.scss */
+/* line 18, ../sass/_header.scss */
 #header .nav li {
   display: inline-block;
   padding: 0 5%;
 }
-/* line 21, ../sass/_header.scss */
+/* line 22, ../sass/_header.scss */
 #header .nav li a {
   color: #a6cac1;
   text-decoration: none;
 }
-/* line 30, ../sass/_header.scss */
+/* line 31, ../sass/_header.scss */
 #header .poster {
   width: 100%;
   margin: 20px auto 0 auto;
   display: block;
 }
-/* line 36, ../sass/_header.scss */
+/* line 37, ../sass/_header.scss */
 #header .date {
   text-align: center;
   width: 25%;
@@ -125,6 +126,20 @@ h3 {
   font-family: 'Josefin Slab', serif;
   font-size: 40px;
   color: #671c3a;
+}
+
+/* line 21, ../sass/_text.scss */
+h4 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 24px;
+  color: #671c3a;
+}
+
+/* line 28, ../sass/_text.scss */
+h5 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 18px;
+  line-height: 30px;
 }
 
 /* line 1, ../sass/_our-story.scss */
@@ -155,7 +170,7 @@ h3 {
 #about-us {
   background: #fbf7f5;
   margin: 100px 0 0 0;
-  padding: 100px 0 0 0;
+  padding: 100px 0;
 }
 /* line 6, ../sass/_about-us.scss */
 #about-us .inner {
@@ -183,3 +198,62 @@ h3 {
 }
 
 /*about-us*/
+/* line 1, ../sass/_wedding-info.scss */
+#wedding-info {
+  width: 80%;
+  margin: 100px auto 0 auto;
+  /*temple*/
+  /*event-boxes*/
+  /*sealing-info*/
+}
+/* line 5, ../sass/_wedding-info.scss */
+#wedding-info .temple {
+  width: 100%;
+  margin: 100px 0 0 0;
+}
+/* line 11, ../sass/_wedding-info.scss */
+#wedding-info .event-boxes {
+  width: 60%;
+  text-align: center;
+  margin: 100px auto 0 auto;
+  /*li*/
+}
+/* line 16, ../sass/_wedding-info.scss */
+#wedding-info .event-boxes li {
+  display: inline-block;
+  padding: 10px 0;
+  margin: 0 2%;
+  width: 28%;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 100;
+  color: #a6cac1;
+}
+/* line 27, ../sass/_wedding-info.scss */
+#wedding-info .event-boxes .highlight-box {
+  background: #a6cac1;
+  color: white;
+}
+/* line 35, ../sass/_wedding-info.scss */
+#wedding-info .sealing-info {
+  width: 100%;
+  text-align: center;
+  margin: 100px 0 0 0;
+  /*li*/
+}
+/* line 40, ../sass/_wedding-info.scss */
+#wedding-info .sealing-info li {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 5%;
+}
+/* line 49, ../sass/_wedding-info.scss */
+#wedding-info .where-when {
+  text-align: left;
+}
+/* line 52, ../sass/_wedding-info.scss */
+#wedding-info .where-when h4 {
+  padding: 0 0 20px 0;
+}
+
+/*wedding-info*/
