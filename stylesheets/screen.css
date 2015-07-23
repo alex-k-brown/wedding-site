@@ -201,7 +201,7 @@ h5 {
 /* line 1, ../sass/_wedding-info.scss */
 #wedding-info {
   width: 80%;
-  margin: 100px auto 0 auto;
+  margin: 100px auto;
   /*temple*/
   /*event-boxes*/
   /*sealing-info*/
@@ -250,10 +250,87 @@ h5 {
 /* line 49, ../sass/_wedding-info.scss */
 #wedding-info .where-when {
   text-align: left;
+  padding: 20px 0 0 0;
 }
-/* line 52, ../sass/_wedding-info.scss */
+/* line 53, ../sass/_wedding-info.scss */
 #wedding-info .where-when h4 {
   padding: 0 0 20px 0;
 }
+/* line 58, ../sass/_wedding-info.scss */
+#wedding-info .where-when a {
+  margin: 40px 0 0 0;
+  font-size: 20px;
+}
+/* line 62, ../sass/_wedding-info.scss */
+#wedding-info .where-when a i {
+  color: #a6cac1;
+}
+/* line 66, ../sass/_wedding-info.scss */
+#wedding-info .where-when a i h5 {
+  color: #a6cac1;
+  display: inline-block;
+  font-size: 22px;
+  padding: 0 0 0 5px;
+}
+/* line 80, ../sass/_wedding-info.scss */
+#wedding-info .when {
+  padding: 40px 0;
+}
 
 /*wedding-info*/
+/* line 1, ../sass/_wedding-party.scss */
+#wedding-party {
+  background: #fbf7f5;
+  padding: 100px 0 0 0;
+  /*inner*/
+  /*bridesmaids*/
+  /*groomsmen*/
+  /*h3*/
+}
+/* line 5, ../sass/_wedding-party.scss */
+#wedding-party .inner {
+  width: 80%;
+  margin: 0 auto 0 auto;
+}
+/* line 11, ../sass/_wedding-party.scss */
+#wedding-party .bridesmaids {
+  width: 100%;
+  text-align: center;
+  margin: 0 0 50px 0;
+  /*li*/
+}
+/* line 16, ../sass/_wedding-party.scss */
+#wedding-party .bridesmaids li {
+  width: 13%;
+  display: inline-block;
+  padding: 0 1%;
+  /*img*/
+}
+/* line 21, ../sass/_wedding-party.scss */
+#wedding-party .bridesmaids li img {
+  width: 100%;
+}
+/* line 28, ../sass/_wedding-party.scss */
+#wedding-party .groomsmen {
+  width: 100%;
+  text-align: center;
+  margin: 0 0 50px 0;
+  /*li*/
+}
+/* line 33, ../sass/_wedding-party.scss */
+#wedding-party .groomsmen li {
+  width: 13%;
+  display: inline-block;
+  padding: 0 1%;
+  /*img*/
+}
+/* line 38, ../sass/_wedding-party.scss */
+#wedding-party .groomsmen li img {
+  width: 100%;
+}
+/* line 45, ../sass/_wedding-party.scss */
+#wedding-party h3 {
+  padding: 0 0 100px 0;
+}
+
+/*wedding-party*/
