@@ -1,0 +1,28 @@
+#rsvp {
+  width: 80%;
+  margin: 100px auto;
+
+  h3 {
+    margin: 0 0 100px 0;
+
+  }
+
+  .i, .name, .attending, .party-of, .party-number, .submit {
+    display: inline-block;
+
+  }
+
+  form {
+    text-align: center;
+
+  }
+
+  .name {
+    border: none;
+    background: #fbf7f5;
+    width: 20%;
+    padding: 7px;
+
+  }
+
+}/*rsvp*/

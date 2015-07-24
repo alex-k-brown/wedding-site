@@ -307,30 +307,64 @@ h5 {
   /*img*/
 }
 /* line 21, ../sass/_wedding-party.scss */
+#wedding-party .bridesmaids li:hover {
+  opacity: .7;
+}
+/* line 26, ../sass/_wedding-party.scss */
 #wedding-party .bridesmaids li img {
   width: 100%;
 }
-/* line 28, ../sass/_wedding-party.scss */
+/* line 33, ../sass/_wedding-party.scss */
 #wedding-party .groomsmen {
   width: 100%;
   text-align: center;
   margin: 0 0 50px 0;
   /*li*/
 }
-/* line 33, ../sass/_wedding-party.scss */
+/* line 38, ../sass/_wedding-party.scss */
 #wedding-party .groomsmen li {
   width: 13%;
   display: inline-block;
   padding: 0 1%;
   /*img*/
 }
-/* line 38, ../sass/_wedding-party.scss */
+/* line 43, ../sass/_wedding-party.scss */
+#wedding-party .groomsmen li:hover {
+  opacity: .7;
+}
+/* line 48, ../sass/_wedding-party.scss */
 #wedding-party .groomsmen li img {
   width: 100%;
 }
-/* line 45, ../sass/_wedding-party.scss */
+/* line 55, ../sass/_wedding-party.scss */
 #wedding-party h3 {
   padding: 0 0 100px 0;
 }
 
 /*wedding-party*/
+/* line 1, ../sass/_rsvp.scss */
+#rsvp {
+  width: 80%;
+  margin: 100px auto;
+}
+/* line 5, ../sass/_rsvp.scss */
+#rsvp h3 {
+  margin: 0 0 100px 0;
+}
+/* line 10, ../sass/_rsvp.scss */
+#rsvp .i, #rsvp .name, #rsvp .attending, #rsvp .party-of, #rsvp .party-number, #rsvp .submit {
+  display: inline-block;
+}
+/* line 15, ../sass/_rsvp.scss */
+#rsvp form {
+  text-align: center;
+}
+/* line 20, ../sass/_rsvp.scss */
+#rsvp .name {
+  border: none;
+  background: #fbf7f5;
+  width: 20%;
+  padding: 7px;
+}
+
+/*rsvp*/
