@@ -246,13 +246,25 @@ p {
   margin: 100px 0 0 0;
 }
 /* line 12, ../sass/_wedding-info.scss */
+#wedding-info .overlay {
+  background: transparent;
+  position: relative;
+  width: 100%;
+  height: 300px;
+  /* your iframe height */
+  top: 300px;
+  /* your iframe height */
+  margin-top: -300px;
+  /* your iframe height */
+}
+/* line 21, ../sass/_wedding-info.scss */
 #wedding-info .event-boxes {
   width: 60%;
   text-align: center;
   margin: 100px auto 0 auto;
   /*li*/
 }
-/* line 17, ../sass/_wedding-info.scss */
+/* line 26, ../sass/_wedding-info.scss */
 #wedding-info .event-boxes li {
   display: inline-block;
   padding: 10px 0;
@@ -263,52 +275,59 @@ p {
   font-weight: 100;
   color: #a6cac1;
 }
-/* line 28, ../sass/_wedding-info.scss */
+/* line 37, ../sass/_wedding-info.scss */
 #wedding-info .event-boxes .highlight-box {
   background: #a6cac1;
   color: white;
 }
-/* line 36, ../sass/_wedding-info.scss */
+/* line 45, ../sass/_wedding-info.scss */
 #wedding-info .sealing-info {
   width: 100%;
   text-align: center;
   margin: 100px 0 0 0;
   /*li*/
 }
-/* line 41, ../sass/_wedding-info.scss */
+/* line 50, ../sass/_wedding-info.scss */
 #wedding-info .sealing-info li {
   display: inline-block;
   vertical-align: top;
   margin: 0 5%;
 }
-/* line 50, ../sass/_wedding-info.scss */
+/* line 59, ../sass/_wedding-info.scss */
 #wedding-info .where-when {
   text-align: left;
   padding: 20px 0 0 0;
+  display: inline-block;
+  width: 30%;
 }
-/* line 54, ../sass/_wedding-info.scss */
+/* line 65, ../sass/_wedding-info.scss */
 #wedding-info .where-when h4 {
   padding: 0 0 20px 0;
 }
-/* line 59, ../sass/_wedding-info.scss */
+/* line 70, ../sass/_wedding-info.scss */
 #wedding-info .where-when a {
   margin: 40px 0 0 0;
   font-size: 20px;
 }
-/* line 63, ../sass/_wedding-info.scss */
+/* line 74, ../sass/_wedding-info.scss */
 #wedding-info .where-when a i {
   color: #a6cac1;
 }
-/* line 67, ../sass/_wedding-info.scss */
+/* line 78, ../sass/_wedding-info.scss */
 #wedding-info .where-when a i h5 {
   color: #a6cac1;
   display: inline-block;
   font-size: 22px;
   padding: 0 0 0 5px;
 }
-/* line 81, ../sass/_wedding-info.scss */
+/* line 92, ../sass/_wedding-info.scss */
 #wedding-info .when {
   padding: 40px 0;
+}
+/* line 96, ../sass/_wedding-info.scss */
+#wedding-info .map {
+  display: inline-block;
+  width: 48%;
 }
 
 /*wedding-info*/
