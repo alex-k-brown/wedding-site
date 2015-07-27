@@ -1,5 +1,40 @@
 #gallery {
   width: 80%;
-  margin: 100px auto;
+  margin: 0 auto;
+  padding: 100px 0;
 
-}
+  .photos {
+
+    margin: 100px 0 0 0;
+    width: 100%;
+    text-align: center;
+
+    .arrow {
+      width: 4%;
+      padding: 70px .5% 0 .5%;
+      vertical-align: top;
+
+      i {
+        font-size: 48px;
+        color: #a6cac1;
+
+      }/*i*/
+
+    }/*arrow*/
+
+    li {
+      list-style-type: none;
+      display: inline-block;
+      padding: 0 .25%;
+      width: 17%;
+
+      img {
+        width: 100%;
+
+      }/*img*/
+
+    }/*li*/
+
+  }/*photos*/
+
+}/*gallery*/

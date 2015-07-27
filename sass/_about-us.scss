@@ -1,11 +1,21 @@
 #about-us {
-  background: #fbf7f5;
+  background: #fafafa;
   margin: 100px 0 0 0;
   padding: 100px 0;
 
   .inner {
     width: 80%;
     margin: 0 auto 0 auto;
+
+    .alex {
+      text-align: right;
+
+    }/*alex*/
+
+    .melanie {
+      text-align: left;
+
+    }/*melanie*/
 
     .about-us-list {
       list-style-type: none;
@@ -16,16 +26,19 @@
         list-style-type: none;
         display: inline-block;
         padding: 0 1%;
-        width: 40%;
+        width: 47%;
 
-        .story-img {
-          background: orange;
-          width: 100%;
-          height: 200px;
+        h4 {
+          padding: 25px 0;
+          color: #dfc59e;
 
-        }
-      }
-    }
+        }/*h4*/
 
-  }
+        img {
+          width: 60%;
+
+        }/*img*/
+      }/*li*/
+    }/*about-us-list*/
+  }/*inner*/
 }/*about-us*/

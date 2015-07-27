@@ -71,34 +71,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 #header .logo {
   text-align: center;
   width: 50%;
-  margin: 200px auto 0 auto;
+  margin: 100px auto;
 }
 /* line 10, ../sass/_header.scss */
-#header .nav {
-  color: #a6cac1;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 24px;
-  font-weight: 100;
-  margin: 100px auto 0 auto;
-  text-align: center;
-}
-/* line 18, ../sass/_header.scss */
-#header .nav li {
-  display: inline-block;
-  padding: 0 5%;
-}
-/* line 22, ../sass/_header.scss */
-#header .nav li a {
-  color: #a6cac1;
-  text-decoration: none;
-}
-/* line 31, ../sass/_header.scss */
 #header .poster {
   width: 100%;
   margin: 20px auto 0 auto;
   display: block;
 }
-/* line 37, ../sass/_header.scss */
+/* line 16, ../sass/_header.scss */
 #header .date {
   text-align: center;
   width: 25%;
@@ -142,83 +123,136 @@ h5 {
   line-height: 30px;
 }
 
+/* line 34, ../sass/_text.scss */
+p {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 18px;
+  color: #697379;
+  line-height: 30px;
+}
+
 /* line 1, ../sass/_our-story.scss */
 #our-story {
-  margin: 300px auto 0 auto;
+  margin: 200px auto 0 auto;
+  padding: 100px 0 0 0;
   width: 80%;
+  /*our-story-list*/
 }
-/* line 5, ../sass/_our-story.scss */
+/* line 6, ../sass/_our-story.scss */
 #our-story .our-story-list {
   list-style-type: none;
   margin: 100px 0 0 0;
+  text-align: center;
+  /*li*/
 }
-/* line 9, ../sass/_our-story.scss */
+/* line 11, ../sass/_our-story.scss */
 #our-story .our-story-list li {
   list-style-type: none;
   display: inline-block;
   padding: 0 1%;
-  width: 17%;
+  width: 22%;
+  /*highlight-box*/
+  /*h4*/
+  /*img*/
 }
-/* line 15, ../sass/_our-story.scss */
-#our-story .our-story-list li .story-img {
-  background: orange;
+/* line 17, ../sass/_our-story.scss */
+#our-story .our-story-list li .highlight-box {
+  background: #dfc59e;
+  color: white;
+}
+/* line 23, ../sass/_our-story.scss */
+#our-story .our-story-list li h4 {
+  color: #dfc59e;
+  font-weight: 100;
+  margin: 5px 0 0 0;
+  padding: 5px 0;
+}
+/* line 31, ../sass/_our-story.scss */
+#our-story .our-story-list li img {
   width: 100%;
-  height: 200px;
+}
+/* line 40, ../sass/_our-story.scss */
+#our-story .story-text {
+  padding: 50px 0 0 0;
+}
+/* line 43, ../sass/_our-story.scss */
+#our-story .story-text p {
+  margin: 25px 0 0 0;
 }
 
+/*our-story*/
 /* line 1, ../sass/_about-us.scss */
 #about-us {
-  background: #fbf7f5;
+  background: #fafafa;
   margin: 100px 0 0 0;
   padding: 100px 0;
+  /*inner*/
 }
 /* line 6, ../sass/_about-us.scss */
 #about-us .inner {
   width: 80%;
   margin: 0 auto 0 auto;
+  /*alex*/
+  /*melanie*/
+  /*about-us-list*/
 }
 /* line 10, ../sass/_about-us.scss */
+#about-us .inner .alex {
+  text-align: right;
+}
+/* line 15, ../sass/_about-us.scss */
+#about-us .inner .melanie {
+  text-align: left;
+}
+/* line 20, ../sass/_about-us.scss */
 #about-us .inner .about-us-list {
   list-style-type: none;
   margin: 100px 0 0 0;
   text-align: center;
+  /*li*/
 }
-/* line 15, ../sass/_about-us.scss */
+/* line 25, ../sass/_about-us.scss */
 #about-us .inner .about-us-list li {
   list-style-type: none;
   display: inline-block;
   padding: 0 1%;
-  width: 40%;
+  width: 47%;
+  /*h4*/
+  /*img*/
 }
-/* line 21, ../sass/_about-us.scss */
-#about-us .inner .about-us-list li .story-img {
-  background: orange;
-  width: 100%;
-  height: 200px;
+/* line 31, ../sass/_about-us.scss */
+#about-us .inner .about-us-list li h4 {
+  padding: 25px 0;
+  color: #dfc59e;
+}
+/* line 37, ../sass/_about-us.scss */
+#about-us .inner .about-us-list li img {
+  width: 60%;
 }
 
 /*about-us*/
 /* line 1, ../sass/_wedding-info.scss */
 #wedding-info {
   width: 80%;
-  margin: 100px auto;
+  margin: 0 auto;
+  padding: 100px 0;
   /*temple*/
   /*event-boxes*/
   /*sealing-info*/
 }
-/* line 5, ../sass/_wedding-info.scss */
+/* line 6, ../sass/_wedding-info.scss */
 #wedding-info .temple {
   width: 100%;
   margin: 100px 0 0 0;
 }
-/* line 11, ../sass/_wedding-info.scss */
+/* line 12, ../sass/_wedding-info.scss */
 #wedding-info .event-boxes {
   width: 60%;
   text-align: center;
   margin: 100px auto 0 auto;
   /*li*/
 }
-/* line 16, ../sass/_wedding-info.scss */
+/* line 17, ../sass/_wedding-info.scss */
 #wedding-info .event-boxes li {
   display: inline-block;
   padding: 10px 0;
@@ -229,50 +263,50 @@ h5 {
   font-weight: 100;
   color: #a6cac1;
 }
-/* line 27, ../sass/_wedding-info.scss */
+/* line 28, ../sass/_wedding-info.scss */
 #wedding-info .event-boxes .highlight-box {
   background: #a6cac1;
   color: white;
 }
-/* line 35, ../sass/_wedding-info.scss */
+/* line 36, ../sass/_wedding-info.scss */
 #wedding-info .sealing-info {
   width: 100%;
   text-align: center;
   margin: 100px 0 0 0;
   /*li*/
 }
-/* line 40, ../sass/_wedding-info.scss */
+/* line 41, ../sass/_wedding-info.scss */
 #wedding-info .sealing-info li {
   display: inline-block;
   vertical-align: top;
   margin: 0 5%;
 }
-/* line 49, ../sass/_wedding-info.scss */
+/* line 50, ../sass/_wedding-info.scss */
 #wedding-info .where-when {
   text-align: left;
   padding: 20px 0 0 0;
 }
-/* line 53, ../sass/_wedding-info.scss */
+/* line 54, ../sass/_wedding-info.scss */
 #wedding-info .where-when h4 {
   padding: 0 0 20px 0;
 }
-/* line 58, ../sass/_wedding-info.scss */
+/* line 59, ../sass/_wedding-info.scss */
 #wedding-info .where-when a {
   margin: 40px 0 0 0;
   font-size: 20px;
 }
-/* line 62, ../sass/_wedding-info.scss */
+/* line 63, ../sass/_wedding-info.scss */
 #wedding-info .where-when a i {
   color: #a6cac1;
 }
-/* line 66, ../sass/_wedding-info.scss */
+/* line 67, ../sass/_wedding-info.scss */
 #wedding-info .where-when a i h5 {
   color: #a6cac1;
   display: inline-block;
   font-size: 22px;
   padding: 0 0 0 5px;
 }
-/* line 80, ../sass/_wedding-info.scss */
+/* line 81, ../sass/_wedding-info.scss */
 #wedding-info .when {
   padding: 40px 0;
 }
@@ -280,35 +314,36 @@ h5 {
 /*wedding-info*/
 /* line 1, ../sass/_wedding-party.scss */
 #wedding-party {
-  background: #fbf7f5;
+  background: #fafafa;
   padding: 100px 0;
+  /*h5*/
   /*inner*/
   /*bridesmaids*/
   /*groomsmen*/
   /*h3*/
 }
 /* line 5, ../sass/_wedding-party.scss */
+#wedding-party h5 {
+  color: #dfc59e;
+}
+/* line 10, ../sass/_wedding-party.scss */
 #wedding-party .inner {
   width: 80%;
   margin: 0 auto 0 auto;
 }
-/* line 11, ../sass/_wedding-party.scss */
+/* line 16, ../sass/_wedding-party.scss */
 #wedding-party .bridesmaids {
   width: 100%;
   text-align: center;
   margin: 0 0 50px 0;
   /*li*/
 }
-/* line 16, ../sass/_wedding-party.scss */
+/* line 21, ../sass/_wedding-party.scss */
 #wedding-party .bridesmaids li {
   width: 13%;
   display: inline-block;
   padding: 0 1%;
   /*img*/
-}
-/* line 21, ../sass/_wedding-party.scss */
-#wedding-party .bridesmaids li:hover {
-  opacity: .7;
 }
 /* line 26, ../sass/_wedding-party.scss */
 #wedding-party .bridesmaids li img {
@@ -345,36 +380,37 @@ h5 {
 /* line 1, ../sass/_rsvp.scss */
 #rsvp {
   width: 80%;
-  margin: 100px auto;
+  margin: 0 auto;
+  padding: 100px 0;
 }
-/* line 5, ../sass/_rsvp.scss */
+/* line 6, ../sass/_rsvp.scss */
 #rsvp h3 {
   margin: 0 0 100px 0;
 }
-/* line 10, ../sass/_rsvp.scss */
+/* line 11, ../sass/_rsvp.scss */
 #rsvp #rsvp-form {
   text-align: left;
   width: 50%;
   margin: 0 auto;
-  background: #fbf7f5;
+  background: #fafafa;
   padding: 50px;
 }
-/* line 17, ../sass/_rsvp.scss */
+/* line 18, ../sass/_rsvp.scss */
 #rsvp #rsvp-form li {
   margin: 20px 0;
 }
-/* line 24, ../sass/_rsvp.scss */
+/* line 25, ../sass/_rsvp.scss */
 #rsvp form {
   text-align: center;
 }
-/* line 29, ../sass/_rsvp.scss */
+/* line 30, ../sass/_rsvp.scss */
 #rsvp .name, #rsvp .email, #rsvp .number {
   border: none;
   display: inline-block;
   width: 70%;
   padding: 7px;
 }
-/* line 37, ../sass/_rsvp.scss */
+/* line 38, ../sass/_rsvp.scss */
 #rsvp .submit {
   background: #a6cac1;
   color: white;
@@ -383,12 +419,12 @@ h5 {
   width: 100px;
   display: block;
 }
-/* line 47, ../sass/_rsvp.scss */
+/* line 48, ../sass/_rsvp.scss */
 #rsvp .i {
   width: 20%;
   display: inline-block;
 }
-/* line 53, ../sass/_rsvp.scss */
+/* line 54, ../sass/_rsvp.scss */
 #rsvp .attending {
   width: 70%;
   height: 40px;
@@ -397,7 +433,7 @@ h5 {
 /*rsvp*/
 /* line 1, ../sass/_registry.scss */
 #registry {
-  background: #fbf7f5;
+  background: #fafafa;
   padding: 100px 0;
   /*inner*/
   /*honeyfund, target*/
@@ -434,6 +470,14 @@ h5 {
   float: right;
 }
 /* line 38, ../sass/_registry.scss */
+#registry .target {
+  margin: 63px 0 0 0;
+}
+/* line 41, ../sass/_registry.scss */
+#registry .target h5 {
+  margin: 10px 0 0 0;
+}
+/* line 48, ../sass/_registry.scss */
 #registry a {
   color: #a6cac1;
   text-decoration: none;
@@ -443,5 +487,78 @@ h5 {
 /* line 1, ../sass/_gallery.scss */
 #gallery {
   width: 80%;
-  margin: 100px auto;
+  margin: 0 auto;
+  padding: 100px 0;
+  /*photos*/
 }
+/* line 6, ../sass/_gallery.scss */
+#gallery .photos {
+  margin: 100px 0 0 0;
+  width: 100%;
+  text-align: center;
+  /*arrow*/
+  /*li*/
+}
+/* line 12, ../sass/_gallery.scss */
+#gallery .photos .arrow {
+  width: 4%;
+  padding: 70px .5% 0 .5%;
+  vertical-align: top;
+  /*i*/
+}
+/* line 17, ../sass/_gallery.scss */
+#gallery .photos .arrow i {
+  font-size: 48px;
+  color: #a6cac1;
+}
+/* line 25, ../sass/_gallery.scss */
+#gallery .photos li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0 .25%;
+  width: 17%;
+  /*img*/
+}
+/* line 31, ../sass/_gallery.scss */
+#gallery .photos li img {
+  width: 100%;
+}
+
+/*gallery*/
+/* line 1, ../sass/_nav.scss */
+#nav {
+  width: 100%;
+}
+/* line 4, ../sass/_nav.scss */
+#nav .nav {
+  color: #a6cac1;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 100;
+  margin: -100px auto 0 auto;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  background: white;
+  padding: 20px 0;
+  opacity: .9;
+}
+/* line 18, ../sass/_nav.scss */
+#nav .nav li {
+  display: inline-block;
+  padding: 0 3%;
+}
+/* line 22, ../sass/_nav.scss */
+#nav .nav li a {
+  color: #a6cac1;
+  text-decoration: none;
+}
+
+/*nav*/
+/* line 1, ../sass/_footer.scss */
+#footer {
+  background: #fafafa;
+  padding: 100px 0;
+}
+
+/*footer*/
