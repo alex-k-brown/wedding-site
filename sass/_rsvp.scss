@@ -7,8 +7,17 @@
 
   }
 
-  .i, .name, .attending, .party-of, .party-number, .submit {
-    display: inline-block;
+  #rsvp-form {
+    text-align: left;
+    width: 50%;
+    margin: 0 auto;
+    background: #fbf7f5;
+    padding: 50px;
+
+    li {
+      margin: 20px 0;
+
+    }
 
   }
 
@@ -17,11 +26,33 @@
 
   }
 
-  .name {
+  .name, .email, .number {
     border: none;
-    background: #fbf7f5;
-    width: 20%;
+    display: inline-block;
+    width: 70%;
     padding: 7px;
+
+  }
+
+  .submit {
+    background: #a6cac1;
+    color: white;
+    border: none;
+    height: 30PX;
+    width: 100px;
+    display: block;
+
+  }
+
+  .i {
+    width: 20%;
+    display: inline-block;
+
+  }
+
+  .attending {
+    width: 70%;
+    height: 40px;
 
   }
 

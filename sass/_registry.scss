@@ -1,0 +1,44 @@
+#registry {
+  background: #fbf7f5;
+  padding: 100px 0;
+
+  h3 {
+    margin: 0 0 100px 0;
+
+  }
+
+  h4 {
+    color: #697379;
+
+  }
+
+  .inner {
+    width: 80%;
+    margin: 0 auto 0 auto;
+
+  }/*inner*/
+
+  .honeyfund, .target {
+    width: 49%;
+    text-align: center;
+    display: inline-block;
+    margin: 50px 0 0 0;
+
+    img {
+      width: 50%;
+
+    }/*img*/
+  }/*honeyfund, target*/
+
+  .honeyfund {
+    float: right;
+
+  }/*honeyfund*/
+
+  a {
+    color: #a6cac1;
+    text-decoration: none;
+
+  }/*a*/
+
+}/*registry*/

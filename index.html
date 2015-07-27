@@ -133,38 +133,55 @@
     <div id="rsvp">
         <h3>RSVP</h3>
         <form id="rsvp-form">
-            <h4 class="i">I, </h4>
-            <input class="name" type="text" name="name" placeholder="Name">
-            <select class="attending">
-                <option value="will be attending the Murrieta Reception">will be attending the California Reception</option>
-                <option value="will be attending the Murrieta Reception">will be attending the Washington Open House</option>
-                <option value="will not be attending">will not be able to attend</option>
-            </select>
-            <h4 class="party-of">with a party of</h4>
-            <select class="party-number">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-                <option value="11">11</option>
-                <option value="12">12</option>
-                <option value="13">13</option>
-                <option value="14">14</option>
-                <option value="15">15</option>
-            </select>
-            <input class="submit" type="submit" value="Submit">
+            <ul>
+                <li>
+                    <h4 class="i">Name</h4>
+                    <input class="name" type="text" name="name">
+                </li>
+                <li>
+                    <h4 class="i">Event</h4>
+                    <select class="attending">
+                        <option value="Murrieta Reception">California Reception</option>
+                        <option value="Washington Open House">Washington Open House</option>
+                        <option value="Not Attending">Not Attending</option>
+                    </select>
+                </li>
+                <li>
+                    <h4 class="i"># in Party</h4>
+                    <input class="number" type="number" name="party-number">
+                </li>
+                <li>
+                    <h4 class="i">Email</h4>
+                    <input class="email" type="email" name="email">
+                </li>
+                <li><input class="submit" type="submit" value="Submit"></li>
+            </ul>
         </form>
     </div><!--rsvp-->
+    <div id="registry">
+        <div class="inner">
+            <h3>Registry</h3>
+            <h4>If you would like to give us a gift you can check out our registry at <a target="_blank" href="https://www-secure.target.com/gift-registry/giftgiver?registryId=p8bUhMfbeImJgZVaGVQJxA&registryType=WEDDING">Target</a> or you can help contribute to our new life with a monetary gift on our <a target="_blank" href="http://www.honeyfund.com/wedding/alexandmel">Honeyfund</a>.</h4>
+            <div class="target">
+                <a target="_blank" href="https://www-secure.target.com/gift-registry/giftgiver?registryId=p8bUhMfbeImJgZVaGVQJxA&registryType=WEDDING">
+                    <img src="img/target-logo.png">
+                    <h5>Click here to go to our Target Registry</h5>
+                </a>
+            </div><!--honey fund-->
+            <div class="honeyfund">
+                <a target="_blank" href="http://www.honeyfund.com/wedding/alexandmel">
+                    <img src="img/honeyfund.png">
+                    <h5>Click here to go to our Honeyfund</h5>
+                </a>
+            </div><!--honey fund-->
+        </div><!--inner-->
+    </div><!--registry-->
+    <div id="gallery">
+        <h3>Engagements Gallery</h3>
+    </div><!--gallery-->
 </body>
 <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script>
-
 </script>
 </html>

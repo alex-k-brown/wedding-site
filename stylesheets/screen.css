@@ -352,19 +352,96 @@ h5 {
   margin: 0 0 100px 0;
 }
 /* line 10, ../sass/_rsvp.scss */
-#rsvp .i, #rsvp .name, #rsvp .attending, #rsvp .party-of, #rsvp .party-number, #rsvp .submit {
-  display: inline-block;
+#rsvp #rsvp-form {
+  text-align: left;
+  width: 50%;
+  margin: 0 auto;
+  background: #fbf7f5;
+  padding: 50px;
 }
-/* line 15, ../sass/_rsvp.scss */
+/* line 17, ../sass/_rsvp.scss */
+#rsvp #rsvp-form li {
+  margin: 20px 0;
+}
+/* line 24, ../sass/_rsvp.scss */
 #rsvp form {
   text-align: center;
 }
-/* line 20, ../sass/_rsvp.scss */
-#rsvp .name {
+/* line 29, ../sass/_rsvp.scss */
+#rsvp .name, #rsvp .email, #rsvp .number {
   border: none;
-  background: #fbf7f5;
-  width: 20%;
+  display: inline-block;
+  width: 70%;
   padding: 7px;
+}
+/* line 37, ../sass/_rsvp.scss */
+#rsvp .submit {
+  background: #a6cac1;
+  color: white;
+  border: none;
+  height: 30PX;
+  width: 100px;
+  display: block;
+}
+/* line 47, ../sass/_rsvp.scss */
+#rsvp .i {
+  width: 20%;
+  display: inline-block;
+}
+/* line 53, ../sass/_rsvp.scss */
+#rsvp .attending {
+  width: 70%;
+  height: 40px;
 }
 
 /*rsvp*/
+/* line 1, ../sass/_registry.scss */
+#registry {
+  background: #fbf7f5;
+  padding: 100px 0;
+  /*inner*/
+  /*honeyfund, target*/
+  /*honeyfund*/
+  /*a*/
+}
+/* line 5, ../sass/_registry.scss */
+#registry h3 {
+  margin: 0 0 100px 0;
+}
+/* line 10, ../sass/_registry.scss */
+#registry h4 {
+  color: #697379;
+}
+/* line 15, ../sass/_registry.scss */
+#registry .inner {
+  width: 80%;
+  margin: 0 auto 0 auto;
+}
+/* line 21, ../sass/_registry.scss */
+#registry .honeyfund, #registry .target {
+  width: 49%;
+  text-align: center;
+  display: inline-block;
+  margin: 50px 0 0 0;
+  /*img*/
+}
+/* line 27, ../sass/_registry.scss */
+#registry .honeyfund img, #registry .target img {
+  width: 50%;
+}
+/* line 33, ../sass/_registry.scss */
+#registry .honeyfund {
+  float: right;
+}
+/* line 38, ../sass/_registry.scss */
+#registry a {
+  color: #a6cac1;
+  text-decoration: none;
+}
+
+/*registry*/
+/* line 1, ../sass/_gallery.scss */
+#gallery {
+  width: 80%;
+  margin: 100px auto;
+}
