@@ -10,7 +10,7 @@
 
   #rsvp-form {
     text-align: left;
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
     background: #fafafa;
     padding: 50px;
@@ -56,5 +56,31 @@
     height: 40px;
 
   }
+
+  /*Tablet CSS*/
+  @media (max-width: 1000px) {
+
+    #rsvp-form {
+      width: 80%;
+
+    }
+
+    .name, .email, .number {
+      padding: 15px;
+      font-size: 32px;
+
+    }
+
+    .attending {
+      font-size: 32px;
+
+    }
+
+  }/*Tablet CSS*/
+
+  /*Phone CSS*/
+  @media (max-width: 500px) {
+
+  }/*Phone CSS*/
 
 }/*rsvp*/

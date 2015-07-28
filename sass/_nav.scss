@@ -6,15 +6,15 @@
     color: #a6cac1;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 24px;
-    font-weight: 100;
+    font-weight: normal;
     margin: -100px auto 0 auto;
     text-align: center;
     position: fixed;
     width: 100%;
-    background: white;
+    background: rgba(255, 255, 255, .9);
     padding: 20px 0;
     //border-bottom: 1px solid #a6cac1;
-    opacity: .9;
+
 
     li {
       display: inline-block;
@@ -48,6 +48,16 @@
 
   .hidden-image {
     display: none;
-  }
 
+  }/*hidden-image*/
+
+  /*Tablet CSS*/
+  @media (max-width: 800px) {
+
+  }/*Tablet CSS*/
+
+  /*Phone CSS*/
+  @media (max-width: 800px) {
+
+  }/*Phone CSS*/
 }/*nav*/

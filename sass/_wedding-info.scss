@@ -30,7 +30,7 @@
       width: 28%;
       font-family: "Josefin Sans", sans-serif;
       font-size: 24px;
-      font-weight: 100;
+      font-weight: normal;
       color: #a6cac1;
       cursor: pointer;
     }/*li*/
@@ -103,5 +103,34 @@
     display: inline-block;
     width: 48%;
   }
+
+  /*Tablet CSS*/
+  @media (max-width: 1000px) {
+
+    .event-boxes {
+      width: 100%;
+
+      li {
+        font-size: 40px;
+
+      }
+
+    }
+
+    .where-when {
+      width: 40%;
+    }
+
+    .map {
+      width: 38%;
+
+    }
+
+  }/*Tablet CSS*/
+
+  /*Phone CSS*/
+  @media (max-width: 500px) {
+
+  }/*Phone CSS*/
 
 }/*wedding-info*/

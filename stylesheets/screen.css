@@ -132,6 +132,32 @@ p {
   line-height: 30px;
 }
 
+/*Tablet CSS*/
+@media (max-width: 1000px) {
+  /* line 45, ../sass/_text.scss */
+  h3 {
+    font-size: 64px;
+  }
+
+  /* line 49, ../sass/_text.scss */
+  h4 {
+    font-size: 40px;
+  }
+
+  /* line 54, ../sass/_text.scss */
+  h5 {
+    font-size: 24px;
+  }
+
+  /* line 59, ../sass/_text.scss */
+  p {
+    font-size: 24px;
+    line-height: 48px;
+  }
+}
+/*Tablet CSS*/
+/*Phone CSS*/
+/*Phone CSS*/
 /* line 1, ../sass/_our-story.scss */
 #our-story {
   margin: 200px auto 0 auto;
@@ -169,7 +195,7 @@ p {
 /* line 26, ../sass/_our-story.scss */
 #our-story .our-story-list li h4 {
   color: #dfc59e;
-  font-weight: 100;
+  font-weight: normal;
   margin: 5px 0 0 0;
   padding: 5px 0;
   vertical-align: top;
@@ -254,6 +280,10 @@ p {
   /*event-boxes*/
   /*hidden-info*/
   /*sealing-info*/
+  /*Tablet CSS*/
+  /*Tablet CSS*/
+  /*Phone CSS*/
+  /*Phone CSS*/
 }
 /* line 6, ../sass/_wedding-info.scss */
 #wedding-info .temple {
@@ -287,7 +317,7 @@ p {
   width: 28%;
   font-family: "Josefin Sans", sans-serif;
   font-size: 24px;
-  font-weight: 100;
+  font-weight: normal;
   color: #a6cac1;
   cursor: pointer;
 }
@@ -348,6 +378,24 @@ p {
 #wedding-info .map {
   display: inline-block;
   width: 48%;
+}
+@media (max-width: 1000px) {
+  /* line 110, ../sass/_wedding-info.scss */
+  #wedding-info .event-boxes {
+    width: 100%;
+  }
+  /* line 113, ../sass/_wedding-info.scss */
+  #wedding-info .event-boxes li {
+    font-size: 40px;
+  }
+  /* line 120, ../sass/_wedding-info.scss */
+  #wedding-info .where-when {
+    width: 40%;
+  }
+  /* line 124, ../sass/_wedding-info.scss */
+  #wedding-info .map {
+    width: 38%;
+  }
 }
 
 /*wedding-info*/
@@ -421,6 +469,10 @@ p {
   width: 80%;
   margin: 0 auto;
   padding: 100px 0;
+  /*Tablet CSS*/
+  /*Tablet CSS*/
+  /*Phone CSS*/
+  /*Phone CSS*/
 }
 /* line 6, ../sass/_rsvp.scss */
 #rsvp h3 {
@@ -429,7 +481,7 @@ p {
 /* line 11, ../sass/_rsvp.scss */
 #rsvp #rsvp-form {
   text-align: left;
-  width: 50%;
+  width: 60%;
   margin: 0 auto;
   background: #fafafa;
   padding: 50px;
@@ -467,6 +519,21 @@ p {
 #rsvp .attending {
   width: 70%;
   height: 40px;
+}
+@media (max-width: 1000px) {
+  /* line 63, ../sass/_rsvp.scss */
+  #rsvp #rsvp-form {
+    width: 80%;
+  }
+  /* line 68, ../sass/_rsvp.scss */
+  #rsvp .name, #rsvp .email, #rsvp .number {
+    padding: 15px;
+    font-size: 32px;
+  }
+  /* line 74, ../sass/_rsvp.scss */
+  #rsvp .attending {
+    font-size: 32px;
+  }
 }
 
 /*rsvp*/
@@ -575,20 +642,24 @@ p {
 #nav {
   width: 100%;
   text-align: center;
+  /*hidden-image*/
+  /*Tablet CSS*/
+  /*Tablet CSS*/
+  /*Phone CSS*/
+  /*Phone CSS*/
 }
 /* line 5, ../sass/_nav.scss */
 #nav .nav {
   color: #a6cac1;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 24px;
-  font-weight: 100;
+  font-weight: normal;
   margin: -100px auto 0 auto;
   text-align: center;
   position: fixed;
   width: 100%;
-  background: white;
+  background: rgba(255, 255, 255, 0.9);
   padding: 20px 0;
-  opacity: .9;
 }
 /* line 19, ../sass/_nav.scss */
 #nav .nav li {
