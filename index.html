@@ -38,29 +38,38 @@
     <div id="our-story" class="inner">
         <h3>Our Story</h3>
         <ul class="our-story-list">
-            <li>
+            <li onclick="ourStory(beginning)" id="beginning">
                 <img src="img/beginning.jpg" alt="Alex and Melanie at La Push">
-                <h4 class="highlight-box">The Beginning</h4>
+                <h4 id="beginning-h4" class="highlight-box">The Beginning</h4>
             </li>
-            <li>
+            <li onclick="ourStory(love)" id="love">
                 <img src="img/first-i-love-you.jpg" alt="Alex and Melanie in Provo Canyon">
-                <h4>The First "I Love You"</h4>
+                <h4 id="love-h4">The First "I Love You"</h4>
             </li>
-            <li>
+            <li onclick="ourStory(courtship)" id="courtship">
                 <img src="img/courtship.jpg" alt="Alex and Melanie Dancing at a Wedding">
-                <h4>Courtship</h4>
+                <h4 id="courtship-h4">Courtship</h4>
             </li>
-            <li>
+            <li onclick="ourStory(engaged)" id="engaged">
                 <img src="img/engaged.jpg" alt="Alex proposing to Melanie at Utah Lake">
-                <h4>Engaged</h4>
+                <h4 id="engaged-h4">Engaged</h4>
             </li>
         </ul><!--our-story-list-->
-        <div class="story-text">
+        <div id="beginning-text" class="story-text">
             <p>Alex and Melanie met in September of 2013. Alex was working with his friend T on his clothing line, Koben Jeans (Yes, these are the famous silk lined jeans). They were hosting open calls for models as part of their marketing campaign and Alex had posted a flyer on the bulletin board next to Melanie's mail box. Seriously, can you say fate? When she walked into the audition in the Harrison Fine Arts Center on BYU's campus, Alex immediately looked up from behind his laptop. He smiled and said hello. </p>
             <p>They didn't start dating right away. They talked via email and only about the photo shoot and, as far as Melanie was concerned, Alex Brown was just 'the Koben guy.' After a few weeks of professional interactions Alex finally asked Melanie out to dinner. They went to Cubby's in Provo and talked about other things besides silk-lined jeans. A week later they went to The Pie in Salt Lake City and talked for hours. The more they got to know each other, the more they liked each other.</p>
             <p>Three dates later Alex sat Melanie down for “the talk”.  Melanie let him down easy and said she just wanted to be friends (she was confused). Alex's response? He kissed her. Apparently, “her mouth was saying one thing, but her body was saying another...” </p>
             <p>Whether it was Alex's impressive kissing skills or some stronger cosmic pull, Melanie's mind had been changed. </p>
-        </div><!--story-text-->
+        </div><!--beginning-text-->
+        <div id="love-text" class="hidden-text">
+            <p>Fast forward three months and 800 miles to Seattle on New Year's Eve. Melanie and Alex are sitting in the car stuck in hours of city center traffic. It's 1 a.m and they just shared a New Year's kiss under the space needle. Up until now they had been dating non exclusively and without a title, although they'd both known for a while that they didn't want to be with anyone else. Their conversation somehow turned to “feelings” (yuck). Melanie innocently asked “how do you feel about me?” Trapped in the car and surrounded by traffic, Alex had nowhere to go. Timidly, and yet genuinely, with a huge smile on his face, Alex answered “I kinda love you.” Melanie smiled back – “I kinda love you too.” </p>
+        </div><!--love-text-->
+        <div id="courtship-text" class="hidden-text">
+            <p>After that trip to Washington, Melanie and Alex were inseparable. They spent every day together and hated the times the had to spend apart at work or school. Alex learned to deal with Melanie's love for crime shows and hospital dramas and Melanie eventually came to love the electric dance music Alex likes. They bought a bunny together and named him Theodore. When Theodore died four days later, Alex held Melanie as she cried. They took road trips together and went on adventures. They swam in the ocean in Florida, walked through the rainforests of Washington, playing in the snow of Utah, and danced in the Coachella Valley in California. They spent a year falling more and more in love and eventually they began talking about the prospect of marriage. </p>
+        </div><!--courtship-text-->
+        <div id="engaged-text" class="hidden-text">
+            <p>On December 14th, almost a year to the day they first said they “kinda” loved each other, Alex asked Melanie to marry him. With his sister Sydney as an accomplice, Alex convinced Melanie to go down to Utah Lake to take pictures on the jetty. The jetty was decorated with paper lanterns and Alex had collected  colored glass jars and filled them with tea lights. With a glowing grin on his face and a trembling voice, Alex lowered to one knee and popped the question. Through thick tears, Melanie said “yes.”  </p>
+        </div><!--engaged-text-->
     </div><!--our-story-->
     <div id="about-us">
         <div class="inner">
@@ -239,5 +248,22 @@
 <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script>
+    function ourStory(idName) {
+        console.log(idName.id);
+        var textName = idName.id + '-text';
+        var h4Name = idName.id + '-h4';
+        console.log(textName);
+        document.getElementById('beginning-text').setAttribute('class', 'hidden-text');
+        document.getElementById('love-text').setAttribute('class', 'hidden-text');
+        document.getElementById('courtship-text').setAttribute('class', 'hidden-text');
+        document.getElementById('engaged-text').setAttribute('class', 'hidden-text');
+        document.getElementById(textName).setAttribute('class', 'story-text');
+        document.getElementById('beginning-h4').setAttribute('class', '');
+        document.getElementById('love-h4').setAttribute('class', '');
+        document.getElementById('courtship-h4').setAttribute('class', '');
+        document.getElementById('engaged-h4').setAttribute('class', '');
+        document.getElementById(h4Name).setAttribute('class', 'highlight-box');
+
+    }
 </script>
 </html>

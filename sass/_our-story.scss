@@ -13,6 +13,7 @@
       display: inline-block;
       padding: 0 1%;
       width: 22%;
+      cursor: pointer;
 
       .highlight-box {
         background: #dfc59e;
@@ -43,8 +44,13 @@
     p {
       margin: 25px 0 0 0;
 
-    }
+    }/*p*/
 
-  }
+  }/*story-text*/
+
+  .hidden-text {
+    display: none;
+
+  }/*hidden-text*/
 
 }/*our-story*/

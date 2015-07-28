@@ -137,6 +137,8 @@ p {
   padding: 100px 0 0 0;
   width: 80%;
   /*our-story-list*/
+  /*story-text*/
+  /*hidden-text*/
 }
 /* line 6, ../sass/_our-story.scss */
 #our-story .our-story-list {
@@ -151,33 +153,39 @@ p {
   display: inline-block;
   padding: 0 1%;
   width: 22%;
+  cursor: pointer;
   /*highlight-box*/
   /*h4*/
   /*img*/
 }
-/* line 17, ../sass/_our-story.scss */
+/* line 18, ../sass/_our-story.scss */
 #our-story .our-story-list li .highlight-box {
   background: #dfc59e;
   color: white;
 }
-/* line 23, ../sass/_our-story.scss */
+/* line 24, ../sass/_our-story.scss */
 #our-story .our-story-list li h4 {
   color: #dfc59e;
   font-weight: 100;
   margin: 5px 0 0 0;
   padding: 5px 0;
 }
-/* line 31, ../sass/_our-story.scss */
+/* line 32, ../sass/_our-story.scss */
 #our-story .our-story-list li img {
   width: 100%;
 }
-/* line 40, ../sass/_our-story.scss */
+/* line 41, ../sass/_our-story.scss */
 #our-story .story-text {
   padding: 50px 0 0 0;
+  /*p*/
 }
-/* line 43, ../sass/_our-story.scss */
+/* line 44, ../sass/_our-story.scss */
 #our-story .story-text p {
   margin: 25px 0 0 0;
+}
+/* line 51, ../sass/_our-story.scss */
+#our-story .hidden-text {
+  display: none;
 }
 
 /*our-story*/
