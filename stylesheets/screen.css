@@ -83,7 +83,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 #header .date {
   text-align: center;
   width: 25%;
-  margin: -200px auto 0 auto;
+  margin: -200px 0 0 0;
+  width: 100%;
 }
 
 /* line 1, ../sass/_text.scss */
@@ -145,10 +146,12 @@ p {
   list-style-type: none;
   margin: 100px 0 0 0;
   text-align: center;
+  vertical-align: top;
   /*li*/
 }
-/* line 11, ../sass/_our-story.scss */
+/* line 12, ../sass/_our-story.scss */
 #our-story .our-story-list li {
+  vertical-align: top;
   list-style-type: none;
   display: inline-block;
   padding: 0 1%;
@@ -158,32 +161,34 @@ p {
   /*h4*/
   /*img*/
 }
-/* line 18, ../sass/_our-story.scss */
+/* line 20, ../sass/_our-story.scss */
 #our-story .our-story-list li .highlight-box {
   background: #dfc59e;
   color: white;
 }
-/* line 24, ../sass/_our-story.scss */
+/* line 26, ../sass/_our-story.scss */
 #our-story .our-story-list li h4 {
   color: #dfc59e;
   font-weight: 100;
   margin: 5px 0 0 0;
   padding: 5px 0;
+  vertical-align: top;
 }
-/* line 32, ../sass/_our-story.scss */
+/* line 35, ../sass/_our-story.scss */
 #our-story .our-story-list li img {
   width: 100%;
+  vertical-align: top;
 }
-/* line 41, ../sass/_our-story.scss */
+/* line 45, ../sass/_our-story.scss */
 #our-story .story-text {
   padding: 50px 0 0 0;
   /*p*/
 }
-/* line 44, ../sass/_our-story.scss */
+/* line 48, ../sass/_our-story.scss */
 #our-story .story-text p {
   margin: 25px 0 0 0;
 }
-/* line 51, ../sass/_our-story.scss */
+/* line 55, ../sass/_our-story.scss */
 #our-story .hidden-text {
   display: none;
 }
@@ -221,6 +226,7 @@ p {
 }
 /* line 25, ../sass/_about-us.scss */
 #about-us .inner .about-us-list li {
+  vertical-align: top;
   list-style-type: none;
   display: inline-block;
   padding: 0 1%;
@@ -228,12 +234,12 @@ p {
   /*h4*/
   /*img*/
 }
-/* line 31, ../sass/_about-us.scss */
+/* line 32, ../sass/_about-us.scss */
 #about-us .inner .about-us-list li h4 {
   padding: 25px 0;
   color: #dfc59e;
 }
-/* line 37, ../sass/_about-us.scss */
+/* line 38, ../sass/_about-us.scss */
 #about-us .inner .about-us-list li img {
   width: 60%;
 }
@@ -492,25 +498,26 @@ p {
   text-align: center;
   display: inline-block;
   margin: 50px 0 0 0;
+  vertical-align: top;
   /*img*/
 }
-/* line 27, ../sass/_registry.scss */
+/* line 28, ../sass/_registry.scss */
 #registry .honeyfund img, #registry .target img {
   width: 50%;
 }
-/* line 33, ../sass/_registry.scss */
+/* line 34, ../sass/_registry.scss */
 #registry .honeyfund {
   float: right;
 }
-/* line 38, ../sass/_registry.scss */
+/* line 39, ../sass/_registry.scss */
 #registry .target {
-  margin: 63px 0 0 0;
+  margin: 55px 0 0 0;
 }
-/* line 41, ../sass/_registry.scss */
+/* line 42, ../sass/_registry.scss */
 #registry .target h5 {
   margin: 10px 0 0 0;
 }
-/* line 48, ../sass/_registry.scss */
+/* line 49, ../sass/_registry.scss */
 #registry a {
   color: #a6cac1;
   text-decoration: none;
@@ -535,8 +542,8 @@ p {
 }
 /* line 12, ../sass/_gallery.scss */
 #gallery .photos .arrow {
-  width: 4%;
-  padding: 70px .5% 0 .5%;
+  width: 40px;
+  padding: 0 .5% 0 .5%;
   vertical-align: top;
   cursor: pointer;
   /*i*/
@@ -551,7 +558,7 @@ p {
   list-style-type: none;
   display: inline-block;
   padding: 0 .25%;
-  width: 17%;
+  width: 15%;
   /*img*/
 }
 /* line 32, ../sass/_gallery.scss */
