@@ -92,11 +92,11 @@
         <h3>Our Big Day</h3>
         <img class="temple" src="img/los-angeles-temple.jpg" alt="Los Angeles Temple">
         <ul class="event-boxes">
-            <li class="highlight-box">Sealing</li>
-            <li>Reception</li>
-            <li>Open House</li>
+            <li onclick="weddingInfo(sealing)" id="sealing" class="highlight-box">Sealing</li>
+            <li onclick="weddingInfo(reception)" id="reception">Reception</li>
+            <li onclick="weddingInfo(house)" id="house">Open House</li>
         </ul><!--event-boxes-->
-        <ul class="sealing-info">
+        <ul id="sealing-info" class="event-info">
             <li class="where-when">
                 <h4>Los Angeles Temple</h4>
                 <h5>10777 Santa Monica Blvd</h5>
@@ -113,6 +113,40 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.651264870475!2d-118.4340546!3d34.0528157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bb8496a8463b%3A0xdd290622e0b83d88!2sThe+Church+of+Jesus+Christ+of+Latter-day+Saints!5e0!3m2!1sen!2sus!4v1437415940939" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
             </li><!--map-->
         </ul><!--sealing-info-->
+        <ul id="reception-info" class="hidden-info">
+            <li class="where-when">
+                <h4>The Grieder Residence</h4>
+                <h5>38284 Willow Court</h5>
+                <h5>Murrieta, CA 92562</h5>
+                <h5 class="when">8.29.15 from 6:30-10:00 PM</h5>
+                <a target="_blank" href="https://www.facebook.com/events/1112733195407216/">
+                    <i class="fa fa-facebook">
+                        <h5>Join our event.</h5>
+                    </i>
+                </a>
+            </li><!--where-when-->
+            <li class="map">
+                <div class="overlay" onClick="style.pointerEvents='none'"></div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3324.5254112947!2d-117.241115!3d33.565705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc83a1762323c9%3A0xd08c191ee1df3f6a!2s38284+Willow+Ct%2C+Murrieta%2C+CA+92562!5e0!3m2!1sen!2sus!4v1438042377007" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </li><!--map-->
+        </ul><!--reception-info-->
+        <ul id="house-info" class="hidden-info">
+            <li class="where-when">
+                <h4>The Silver Creek Clubhouse</h4>
+                <h5>18628 Silver Creek Ave E</h5>
+                <h5>Puyallup, WA 98375</h5>
+                <h5 class="when">9.12.15 from 7-9 PM PM</h5>
+                <a target="_blank" href="https://www.facebook.com/events/1112733195407216/">
+                    <i class="fa fa-facebook">
+                        <h5>Join our event.</h5>
+                    </i>
+                </a>
+            </li><!--where-when-->
+            <li class="map">
+                <div class="overlay" onClick="style.pointerEvents='none'"></div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2716.653447387666!2d-122.3104938!3d47.0862592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54911d59fae1a637%3A0x9150b67f33dd9880!2s18628+Silver+Creek+Ave+E%2C+Puyallup%2C+WA+98375!5e0!3m2!1sen!2sus!4v1438042463508" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </li><!--map-->
+        </ul><!--house-info-->
     </div><!--wedding-info-->
     <div id="wedding-party">
         <div class="inner">
@@ -145,7 +179,7 @@
             </ul><!--bridesmaids-->
             <ul class="groomsmen">
                 <li>
-                    <img onb src="img/blake.jpg" alt="Groomsman- Blake">
+                    <img src="img/blake.jpg" alt="Groomsman- Blake">
                     <h5>Blake</h5>
                 </li>
                 <li>
@@ -264,6 +298,19 @@
         document.getElementById('engaged-h4').setAttribute('class', '');
         document.getElementById(h4Name).setAttribute('class', 'highlight-box');
 
+    }
+    function weddingInfo(infoName) {
+        console.log(infoName.id);
+        var eventName = infoName.id + '-info';
+        console.log(eventName);
+        document.getElementById('sealing-info').setAttribute('class', 'hidden-info');
+        document.getElementById('reception-info').setAttribute('class', 'hidden-info');
+        document.getElementById('house-info').setAttribute('class', 'hidden-info');
+        document.getElementById(eventName).setAttribute('class', 'event-info');
+        document.getElementById('sealing').setAttribute('class', '');
+        document.getElementById('reception').setAttribute('class', '');
+        document.getElementById('house').setAttribute('class', '');
+        document.getElementById(infoName.id).setAttribute('class', 'highlight-box');
     }
 </script>
 </html>
