@@ -19,13 +19,13 @@
             <i class="fa fa-bars"></i>
         </div><!--hamburger-->
         <ul id="hamburger-nav" class="nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#our-story">Our Story</a></li>
-            <li><a href="#about-us">About Us</a></li>
-            <li><a href="#wedding-info">Wedding Info</a></li>
-            <li><a href="#rsvp">RSVP</a></li>
-            <li><a href="#registry">Registry</a></li>
-            <li><a href="#gallery">Gallery</a></li>
+            <li><a onclick="menuClose()" href="#">Home</a></li>
+            <li><a onclick="menuClose()" href="#our-story">Our Story</a></li>
+            <li><a onclick="menuClose()" href="#about-us">About Us</a></li>
+            <li><a onclick="menuClose()" href="#wedding-info">Wedding Info</a></li>
+            <li><a onclick="menuClose()" href="#rsvp">RSVP</a></li>
+            <li><a onclick="menuClose()" href="#registry">Registry</a></li>
+            <li><a onclick="menuClose()" href="#gallery">Gallery</a></li>
         </ul>
         <!--<ul class="nav">-->
             <!--<li><a href="#our-story">Our Story</a></li>-->
@@ -441,6 +441,11 @@
         } else {
             document.getElementById('hamburger-nav').setAttribute('class', 'nav')
         }
+
+    }
+
+    function menuClose() {
+        document.getElementById('hamburger-nav').setAttribute('class', 'nav');
 
     }
 
