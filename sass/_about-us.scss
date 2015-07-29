@@ -41,5 +41,38 @@
         }/*img*/
       }/*li*/
     }/*about-us-list*/
+
+    .mobile-about-us {
+      display: none;
+
+    }
+
+    /*Tablet CSS*/
+    @media (max-width: 1000px) {
+
+      .about-us-list {
+
+        li {
+
+          img {
+            width: 100%;
+
+          }
+          p {
+            display: none;
+
+          }
+
+        }
+      }
+
+      .mobile-about-us {
+        display: block;
+        margin: 100px 0 0 0;
+
+      }
+
+    }/*Tablet CSS*/
+
   }/*inner*/
 }/*about-us*/

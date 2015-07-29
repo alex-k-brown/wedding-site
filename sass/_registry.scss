@@ -56,7 +56,20 @@
   @media (max-width: 1000px) {
 
     h5 {
-      font-size: 36px;
+      font-size: 60px;
+
+    }
+
+    .honeyfund, .target {
+      display: block;
+      float: none;
+      margin: 100px 0;
+      width: 100%;
+
+      img {
+        width: 80%;
+
+      }
 
     }
 

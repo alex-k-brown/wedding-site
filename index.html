@@ -47,7 +47,7 @@
         </div>
         <img class="poster" src="img/engagement-poster.jpg">
         <div class="date">
-            <h2>7.29.15</h2>
+            <h2>8.29.15</h2>
         </div>
     </div><!--header-->
     <div id="our-story" class="inner">
@@ -85,6 +85,9 @@
         <div id="engaged-text" class="hidden-text">
             <p>On December 14th, almost a year to the day they first said they “kinda” loved each other, Alex asked Melanie to marry him. With his sister Sydney as an accomplice, Alex convinced Melanie to go down to Utah Lake to take pictures on the jetty. The jetty was decorated with paper lanterns and Alex had collected  colored glass jars and filled them with tea lights. With a glowing grin on his face and a trembling voice, Alex lowered to one knee and popped the question. Through thick tears, Melanie said “yes.”  </p>
         </div><!--engaged-text-->
+        <div class="mobile-story">
+            <p>Alex and Melanie met in September of 2013. They went on their first date in October and had their first kiss in November. When Alex went home to Washington in December, Melanie came with and on New Year’s Day he told Melanie he loved her. They dated for a year before they were engaged and during that time they were all but inseparable. They went sledding in Utah and hiked through the rainforests of Washington. During summer they swam in the ocean off the coast of Florida and danced in the Coachella Valley down in Southern California. The laughed and cried and fought and made up and every day they fell more and more in love. On December 14, 2014 Alex got down on one knee and asked Melanie for her hand in marriage. Standing on the jetty with all of Utah Lake as a backdrop, Melanie tearfully repeated one word over and over: “yes.”  </p>
+        </div>
     </div><!--our-story-->
     <div id="about-us">
         <div class="inner">
@@ -101,6 +104,9 @@
                     <p>Hi, I'm Melanie! I'm the bride. I grew up in Southern California and I've been living in Utah attending BYU for the past four years. I just graduated (hallelujah!) with a BA in English and I'm planning on applying to grad school for next year. I love street tacos –  really though, carne asada is probably my spirit animal – and also Italian food or anything cooked in butter. I love singing and dancing, although I'm not particularly good at either, and I once stayed up until 8 in the morning watching Grey's Anatomy. Alex tells me I'm smokin' hot. </p>
                 </li>
             </ul>
+            <div class="mobile-about-us">
+                <p>Hello! I’m Alex and this is Melanie. I’m a web developer and she’s a copywriter. We both graduated from BYU this past year and we’re so excited to be done with school; even though Melanie is applying for grad school later this year. I love how smart she is and she loves that I always have fun facts to share. I like jamming out to electric dance music and she loves snuggling and watching crime dramas. We both love Mexican food, although I can handle a lot more spice than she can, and I’ve been trying to teach her Spanish so we can talk in secret. We love to go on adventures together and almost always bring a book with us wherever we go. I’m innovative and can get a little too carried away with my projects and ideas. Melanie keeps me grounded while reminding me not to take life too seriously. We balance each other out in every way —  she even lets me be the little spoon sometimes. </p>
+            </div>
         </div><!--inner-->
     </div><!--about-us-->
     <div id="wedding-info">
@@ -264,121 +270,150 @@
     </div><!--registry-->
     <div id="gallery">
         <h3>Engagements Gallery</h3>
-        <ul id="p1" class="photos">
-            <li onclick="gallery(l1)" id="l1" class="arrow">
-                <i class="fa fa-arrow-circle-o-left"></i>
+        <div id="gallery-five">
+            <ul id="p1" class="photos">
+                <li onclick="gallery(l1)" id="l1" class="arrow">
+                    <i class="fa fa-arrow-circle-o-left"></i>
+                </li>
+                <li id="1" onclick="largeImage(1)">
+                    <img src="img/gt1.jpg" alt="Alex and Melanie on Provo Center Street">
+                </li>
+                <li id="2" onclick="largeImage(2)">
+                    <img src="img/gt2.jpg" alt="Alex and Melanie at Aspen Grove">
+                </li>
+                <li id="3" onclick="largeImage(3)">
+                    <img src="img/gt3.jpg" alt="ALex and Melanie at Aspen Grove">
+                </li>
+                <li id="4" onclick="largeImage(4)">
+                    <img src="img/gt4.jpg" alt="Alex and Melanie on Provo Center Street">
+                </li>
+                <li id="5" onclick="largeImage(5)">
+                    <img src="img/gt5.jpg" alt="Alex and Melanie Jumping on a Bed">
+                </li>
+                <li onclick="gallery(r1)" id="r1" class="arrow">
+                    <i class="fa fa-arrow-circle-o-right"></i>
+                </li>
+            </ul><!--photos-->
+            <ul id="p2" class="hidden-photos">
+                <li onclick="gallery(l2)" id="l2" class="arrow">
+                    <i class="fa fa-arrow-circle-o-left"></i>
+                </li>
+                <li id="6" onclick="largeImage(6)">
+                    <img src="img/gallery/gt6.jpg" alt="Alex and Melanie">
+                </li>
+                <li id="7" onclick="largeImage(7)">
+                    <img src="img/gallery/gt7.jpg" alt="Alex and Melanie Kissing">
+                </li>
+                <li id="8" onclick="largeImage(8)">
+                    <img src="img/gallery/gt8.jpg" alt="Alex Kissing Melanie">
+                </li>
+                <li id="9" onclick="largeImage(9)">
+                    <img src="img/gallery/gt9.jpg" alt="Alex and Melanie Jumping on a Bed">
+                </li>
+                <li id="10" onclick="largeImage(10)">
+                    <img src="img//gallery/gt10.jpg" alt="Alex and Melanie at Aspen Grove">
+                </li>
+                <li onclick="gallery(r2)" id="r2" class="arrow">
+                    <i class="fa fa-arrow-circle-o-right"></i>
+                </li>
+            </ul><!--photos-->
+            <ul id="p3" class="hidden-photos">
+                <li onclick="gallery(l3)" id="l3" class="arrow">
+                    <i class="fa fa-arrow-circle-o-left"></i>
+                </li>
+                <li id="11" onclick="largeImage(11)">
+                    <img src="img/gallery/gt11.jpg" alt="Alex and Melanie Having a Pillow Fight">
+                </li>
+                <li id="12" onclick="largeImage(12)">
+                    <img src="img/gallery/gt12.jpg" alt="Alex and Melanie at Aspen Grove">
+                </li>
+                <li id="13" onclick="largeImage(13)">
+                    <img src="img/gallery/gt13.jpg" alt="Alex and Melanie in Front of the Nuskin Building on Provo Center Street">
+                </li>
+                <li id="14" onclick="largeImage(14)">
+                    <img src="img/gallery/gt14.jpg" alt="Alex and Melanie Sitting on a Dock at Utah Lake">
+                </li>
+                <li id="15" onclick="largeImage(15)">
+                    <img src="img//gallery/gt15.jpg" alt="Alex and Melanie Walking on Provo Center Street">
+                </li>
+                <li onclick="gallery(r3)" id="r3" class="arrow">
+                    <i class="fa fa-arrow-circle-o-right"></i>
+                </li>
+            </ul><!--photos-->
+            <ul id="p4" class="hidden-photos">
+                <li onclick="gallery(l4)" id="l4" class="arrow">
+                    <i class="fa fa-arrow-circle-o-left"></i>
+                </li>
+                <li id="16" onclick="largeImage(16)">
+                    <img src="img/gallery/gt16.jpg" alt="Alex and Melanie Dancing in Front of the Nuskin Building on Provo Center Street">
+                </li>
+                <li id="17" onclick="largeImage(17)">
+                    <img src="img/gallery/gt17.jpg" alt="Alex and Melanie Sitting on a Dock at Utah Lake">
+                </li>
+                <li id="18" onclick="largeImage(18)">
+                    <img src="img/gallery/gt18.jpg" alt="Alex and Melanie Kissing">
+                </li>
+                <li id="19" onclick="largeImage(19)">
+                    <img src="img/gallery/gt19.jpg" alt="Alex Carrying Melanie at Aspen Grove">
+                </li>
+                <li id="20" onclick="largeImage(20)">
+                    <img src="img//gallery/gt20.jpg" alt="Alex and Melanie Holding Each Other">
+                </li>
+                <li onclick="gallery(r4)" id="r4" class="arrow">
+                    <i class="fa fa-arrow-circle-o-right"></i>
+                </li>
+            </ul><!--photos-->
+            <ul id="p5" class="hidden-photos">
+                <li onclick="gallery(l5)" id="l5" class="arrow">
+                    <i class="fa fa-arrow-circle-o-left"></i>
+                </li>
+                <li id="21" onclick="largeImage(21)">
+                    <img src="img/gallery/gt21.jpg" alt="Melanie Sitting on Alex's Lap at Aspen Grove">
+                </li>
+                <li id="22" onclick="largeImage(22)">
+                    <img src="img/gallery/gt22.jpg" alt="Alex and Melanie Dancing in Front of the Nuskin Building on Provo Center Street">
+                </li>
+                <li id="23" onclick="largeImage(23)">
+                    <img src="img/gallery/gt23.jpg" alt="Alex Holding and Kissing Melanie at Aspen Grove">
+                </li>
+                <li id="24" onclick="largeImage(24)">
+                    <img src="img/gallery/gt24.jpg" alt="Alex and Melanie Having a Pillow Fight">
+                </li>
+                <li id="25" onclick="largeImage(25)">
+                    <img src="img//gallery/gt25.jpg" alt="Alex Holding Melanie on a Dock at Utah Lake">
+                </li>
+                <li onclick="gallery(r5)" id="r5" class="arrow">
+                    <i class="fa fa-arrow-circle-o-right"></i>
+                </li>
+            </ul><!--photos-->
+        </div><!--gallery-five-->
+        <ul id="gallery-one">
+            <li id="img1">
+                <i id="left1" onclick="galleryOne(left1)" class="fa fa-arrow-circle-o-left left"></i>
+                <i id="right1" onclick="galleryOne(right1)" class="fa fa-arrow-circle-o-right right"></i>
+                <img src="img/gallery/g1.jpg" alt="Alex and Melanie on Provo Center Street">
             </li>
-            <li id="1" onclick="largeImage(1)">
-                <img src="img/gt1.jpg" alt="Alex and Melanie on Provo Center Street">
+            <li id="img2" class="hidden-img">
+                <i id="left2" onclick="galleryOne(left2)" class="fa fa-arrow-circle-o-left left"></i>
+                <i id="right2" onclick="galleryOne(right2)" class="fa fa-arrow-circle-o-right right"></i>
+                <img src="img/gallery/g2.jpg" alt="Alex and Melanie on Provo Center Street">
             </li>
-            <li id="2" onclick="largeImage(2)">
-                <img src="img/gt2.jpg" alt="Alex and Melanie at Aspen Grove">
+            <li id="img3" class="hidden-img">
+                <i id="left3" onclick="galleryOne(left3)" class="fa fa-arrow-circle-o-left left"></i>
+                <i id="right3" onclick="galleryOne(right3)" class="fa fa-arrow-circle-o-right right"></i>
+                <img src="img/gallery/g3.jpg" alt="Alex and Melanie on Provo Center Street">
             </li>
-            <li id="3" onclick="largeImage(3)">
-                <img src="img/gt3.jpg" alt="ALex and Melanie at Aspen Grove">
+            <li id="img4" class="hidden-img">
+                <i id="left4" onclick="galleryOne(left4)" class="fa fa-arrow-circle-o-left left"></i>
+                <i id="right4" onclick="galleryOne(right4)" class="fa fa-arrow-circle-o-right right"></i>
+                <img src="img/gallery/g4.jpg" alt="Alex and Melanie on Provo Center Street">
             </li>
-            <li id="4" onclick="largeImage(4)">
-                <img src="img/gt4.jpg" alt="Alex and Melanie on Provo Center Street">
+            <li id="img5" class="hidden-img">
+                <i id="left5" onclick="galleryOne(left5)" class="fa fa-arrow-circle-o-left left"></i>
+                <i id="right5" onclick="galleryOne(right5)" class="fa fa-arrow-circle-o-right right"></i>
+                <img src="img/gallery/g5.jpg" alt="Alex and Melanie on Provo Center Street">
             </li>
-            <li id="5" onclick="largeImage(5)">
-                <img src="img/gt5.jpg" alt="Alex and Melanie Jumping on a Bed">
-            </li>
-            <li onclick="gallery(r1)" id="r1" class="arrow">
-                <i class="fa fa-arrow-circle-o-right"></i>
-            </li>
-        </ul><!--photos-->
-        <ul id="p2" class="hidden-photos">
-            <li onclick="gallery(l2)" id="l2" class="arrow">
-                <i class="fa fa-arrow-circle-o-left"></i>
-            </li>
-            <li id="6" onclick="largeImage(6)">
-                <img src="img/gallery/gt6.jpg" alt="Alex and Melanie">
-            </li>
-            <li id="7" onclick="largeImage(7)">
-                <img src="img/gallery/gt7.jpg" alt="Alex and Melanie Kissing">
-            </li>
-            <li id="8" onclick="largeImage(8)">
-                <img src="img/gallery/gt8.jpg" alt="Alex Kissing Melanie">
-            </li>
-            <li id="9" onclick="largeImage(9)">
-                <img src="img/gallery/gt9.jpg" alt="Alex and Melanie Jumping on a Bed">
-            </li>
-            <li id="10" onclick="largeImage(10)">
-                <img src="img//gallery/gt10.jpg" alt="Alex and Melanie at Aspen Grove">
-            </li>
-            <li onclick="gallery(r2)" id="r2" class="arrow">
-                <i class="fa fa-arrow-circle-o-right"></i>
-            </li>
-        </ul><!--photos-->
-        <ul id="p3" class="hidden-photos">
-            <li onclick="gallery(l3)" id="l3" class="arrow">
-                <i class="fa fa-arrow-circle-o-left"></i>
-            </li>
-            <li id="11" onclick="largeImage(11)">
-                <img src="img/gallery/gt11.jpg" alt="Alex and Melanie Having a Pillow Fight">
-            </li>
-            <li id="12" onclick="largeImage(12)">
-                <img src="img/gallery/gt12.jpg" alt="Alex and Melanie at Aspen Grove">
-            </li>
-            <li id="13" onclick="largeImage(13)">
-                <img src="img/gallery/gt13.jpg" alt="Alex and Melanie in Front of the Nuskin Building on Provo Center Street">
-            </li>
-            <li id="14" onclick="largeImage(14)">
-                <img src="img/gallery/gt14.jpg" alt="Alex and Melanie Sitting on a Dock at Utah Lake">
-            </li>
-            <li id="15" onclick="largeImage(15)">
-                <img src="img//gallery/gt15.jpg" alt="Alex and Melanie Walking on Provo Center Street">
-            </li>
-            <li onclick="gallery(r3)" id="r3" class="arrow">
-                <i class="fa fa-arrow-circle-o-right"></i>
-            </li>
-        </ul><!--photos-->
-        <ul id="p4" class="hidden-photos">
-            <li onclick="gallery(l4)" id="l4" class="arrow">
-                <i class="fa fa-arrow-circle-o-left"></i>
-            </li>
-            <li id="16" onclick="largeImage(16)">
-                <img src="img/gallery/gt16.jpg" alt="Alex and Melanie Dancing in Front of the Nuskin Building on Provo Center Street">
-            </li>
-            <li id="17" onclick="largeImage(17)">
-                <img src="img/gallery/gt17.jpg" alt="Alex and Melanie Sitting on a Dock at Utah Lake">
-            </li>
-            <li id="18" onclick="largeImage(18)">
-                <img src="img/gallery/gt18.jpg" alt="Alex and Melanie Kissing">
-            </li>
-            <li id="19" onclick="largeImage(19)">
-                <img src="img/gallery/gt19.jpg" alt="Alex Carrying Melanie at Aspen Grove">
-            </li>
-            <li id="20" onclick="largeImage(20)">
-                <img src="img//gallery/gt20.jpg" alt="Alex and Melanie Holding Each Other">
-            </li>
-            <li onclick="gallery(r4)" id="r4" class="arrow">
-                <i class="fa fa-arrow-circle-o-right"></i>
-            </li>
-        </ul><!--photos-->
-        <ul id="p5" class="hidden-photos">
-            <li onclick="gallery(l5)" id="l5" class="arrow">
-                <i class="fa fa-arrow-circle-o-left"></i>
-            </li>
-            <li id="21" onclick="largeImage(21)">
-                <img src="img/gallery/gt21.jpg" alt="Melanie Sitting on Alex's Lap at Aspen Grove">
-            </li>
-            <li id="22" onclick="largeImage(22)">
-                <img src="img/gallery/gt22.jpg" alt="Alex and Melanie Dancing in Front of the Nuskin Building on Provo Center Street">
-            </li>
-            <li id="23" onclick="largeImage(23)">
-                <img src="img/gallery/gt23.jpg" alt="Alex Holding and Kissing Melanie at Aspen Grove">
-            </li>
-            <li id="24" onclick="largeImage(24)">
-                <img src="img/gallery/gt24.jpg" alt="Alex and Melanie Having a Pillow Fight">
-            </li>
-            <li id="25" onclick="largeImage(25)">
-                <img src="img//gallery/gt25.jpg" alt="Alex Holding Melanie on a Dock at Utah Lake">
-            </li>
-            <li onclick="gallery(r5)" id="r5" class="arrow">
-                <i class="fa fa-arrow-circle-o-right"></i>
-            </li>
-        </ul><!--photos-->
+        </ul><!--gallery-one-->
     </div><!--gallery-->
     <div id="footer">
         <div class="inner">
@@ -487,6 +522,56 @@
         else {
             console.log(error);
         }
+    }
+
+    function galleryOne(arrowName) {
+        console.log(arrowName.id);
+        if (arrowName.id == 'right1') {
+            console.log('Yes, it does');
+            document.getElementById('img1').setAttribute('class', 'hidden-img');
+            document.getElementById('img2').setAttribute('class', '');
+        }
+        else if (arrowName.id == 'right2') {
+            document.getElementById('img2').setAttribute('class', 'hidden-img');
+            document.getElementById('img3').setAttribute('class', '');
+        }
+        else if (arrowName.id == 'right3') {
+            document.getElementById('img3').setAttribute('class', 'hidden-img');
+            document.getElementById('img4').setAttribute('class', '');
+        }
+        else if (arrowName.id == 'right4') {
+            document.getElementById('img4').setAttribute('class', 'hidden-img');
+            document.getElementById('img5').setAttribute('class', '');
+        }
+        else if (arrowName.id == 'right5') {
+            document.getElementById('img5').setAttribute('class', 'hidden-img');
+            document.getElementById('img1').setAttribute('class', '');
+        }
+        else if (arrowName.id == 'left1') {
+            document.getElementById('img1').setAttribute('class', 'hidden-img');
+            document.getElementById('img5').setAttribute('class', '');
+        }
+        else if (arrowName.id == 'left2') {
+            document.getElementById('img2').setAttribute('class', 'hidden-img');
+            document.getElementById('img1').setAttribute('class', '');
+        }
+        else if (arrowName.id == 'left3') {
+            document.getElementById('img3').setAttribute('class', 'hidden-img');
+            document.getElementById('img2').setAttribute('class', '');
+        }
+        else if (arrowName.id == 'left4') {
+            document.getElementById('img4').setAttribute('class', 'hidden-img');
+            document.getElementById('img3').setAttribute('class', '');
+        }
+        else if (arrowName.id == 'left5') {
+            document.getElementById('img5').setAttribute('class', 'hidden-img');
+            document.getElementById('img4').setAttribute('class', '');
+        }
+
+        else {
+            console.log(error);
+        }
+
     }
 
     function largeImage(imageNumber) {

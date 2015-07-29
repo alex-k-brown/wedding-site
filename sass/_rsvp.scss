@@ -37,9 +37,10 @@
 
   .submit {
     background: #a6cac1;
+    background-color: #a6cac1;
     color: white;
     border: none;
-    height: 30PX;
+    height: 30px;
     width: 100px;
     display: block;
     border-radius: 0px;
@@ -69,11 +70,26 @@
     .name, .email, .number {
       padding: 15px;
       font-size: 32px;
+      display: block;
+      width: 100%;
+      margin: 25px 0 50px 0;
 
     }
 
     .attending {
-      font-size: 32px;
+      font-size: 60px;
+      display: block;
+      width: 100%;
+      padding: 15px;
+      margin: 25px 0 50px 0;
+      height: 100px;
+
+    }
+
+    .submit {
+      width: 100%;
+      font-size: 60px;
+      height: 80px;
 
     }
 

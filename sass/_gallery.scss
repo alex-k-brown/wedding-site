@@ -43,6 +43,11 @@
 
   }/*hidden-photos*/
 
+  #gallery-one {
+    display: none;
+
+  }
+
   /*Tablet CSS*/
   @media (max-width: 1000px) {
     width: 100%;
@@ -50,6 +55,44 @@
     h3 {
       width: 80%;
       margin: 0 auto;
+
+    }
+
+    #gallery-five {
+      display: none;
+
+    }
+
+    #gallery-one {
+      display: block;
+      padding: 100px 0 0 0;
+
+      .hidden-img {
+        display: none;
+
+      }
+
+      li {
+        width: 80%;
+        margin: 50px auto;
+        text-align: center;
+
+        i {
+          font-size: 160px;
+          color: #a6cac1;
+          display: inline-block;
+          padding: 0 25px;
+
+        }
+
+        img {
+          width: 100%;
+          display: inline-block;
+          z-index: -10;
+
+        }
+
+      }
 
     }
   }/*Tablet CSS*/

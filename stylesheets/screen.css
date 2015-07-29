@@ -96,8 +96,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @media (max-width: 1000px) {
   /* line 26, ../sass/_header.scss */
   #header .logo {
-    width: 70%;
-    margin: 200px auto 100px auto;
+    width: 100%;
+    margin: 300px auto 100px auto;
   }
 }
 
@@ -150,39 +150,40 @@ p {
 @media (max-width: 1000px) {
   /* line 45, ../sass/_text.scss */
   h1 {
-    font-size: 64px;
+    font-size: 80px;
   }
 
   /* line 50, ../sass/_text.scss */
   h2 {
-    font-size: 72px;
+    font-size: 100px;
   }
 
   /* line 55, ../sass/_text.scss */
   h3 {
-    font-size: 64px;
+    font-size: 128px;
   }
 
   /* line 59, ../sass/_text.scss */
   h4 {
-    font-size: 40px;
+    font-size: 80px;
   }
 
   /* line 64, ../sass/_text.scss */
   h5 {
-    font-size: 24px;
+    font-size: 40px;
+    line-height: 56px;
   }
 
-  /* line 69, ../sass/_text.scss */
+  /* line 70, ../sass/_text.scss */
   p {
-    font-size: 24px;
-    line-height: 48px;
+    font-size: 64px;
+    line-height: 100px;
   }
 }
 /*Tablet CSS*/
 /*Phone CSS*/
 @media (max-width: 800px) {
-  /* line 80, ../sass/_text.scss */
+  /* line 81, ../sass/_text.scss */
   h1 {
     font-size: 56px;
   }
@@ -196,8 +197,14 @@ p {
   /*our-story-list*/
   /*story-text*/
   /*hidden-text*/
+  /*Tablet CSS*/
+  /*Tablet CSS*/
 }
 /* line 6, ../sass/_our-story.scss */
+#our-story .mobile-story {
+  display: none;
+}
+/* line 11, ../sass/_our-story.scss */
 #our-story .our-story-list {
   list-style-type: none;
   margin: 100px 0 0 0;
@@ -205,7 +212,7 @@ p {
   vertical-align: top;
   /*li*/
 }
-/* line 12, ../sass/_our-story.scss */
+/* line 17, ../sass/_our-story.scss */
 #our-story .our-story-list li {
   vertical-align: top;
   list-style-type: none;
@@ -217,12 +224,12 @@ p {
   /*h4*/
   /*img*/
 }
-/* line 20, ../sass/_our-story.scss */
+/* line 25, ../sass/_our-story.scss */
 #our-story .our-story-list li .highlight-box {
   background: #dfc59e;
   color: white;
 }
-/* line 26, ../sass/_our-story.scss */
+/* line 31, ../sass/_our-story.scss */
 #our-story .our-story-list li h4 {
   color: #dfc59e;
   font-weight: normal;
@@ -230,23 +237,53 @@ p {
   padding: 5px 0;
   vertical-align: top;
 }
-/* line 35, ../sass/_our-story.scss */
+/* line 40, ../sass/_our-story.scss */
 #our-story .our-story-list li img {
   width: 100%;
   vertical-align: top;
 }
-/* line 45, ../sass/_our-story.scss */
+/* line 50, ../sass/_our-story.scss */
 #our-story .story-text {
   padding: 50px 0 0 0;
   /*p*/
 }
-/* line 48, ../sass/_our-story.scss */
+/* line 53, ../sass/_our-story.scss */
 #our-story .story-text p {
   margin: 25px 0 0 0;
 }
-/* line 55, ../sass/_our-story.scss */
+/* line 60, ../sass/_our-story.scss */
 #our-story .hidden-text {
   display: none;
+}
+@media (max-width: 1000px) {
+  /* line 1, ../sass/_our-story.scss */
+  #our-story {
+    width: 100%;
+  }
+  /* line 69, ../sass/_our-story.scss */
+  #our-story h3 {
+    width: 80%;
+    margin: 0 auto;
+  }
+  /* line 75, ../sass/_our-story.scss */
+  #our-story .story-text {
+    width: 80%;
+    margin: 0 auto;
+  }
+  /* line 80, ../sass/_our-story.scss */
+  #our-story #beginning-text {
+    display: none;
+  }
+  /* line 85, ../sass/_our-story.scss */
+  #our-story h4 {
+    display: none;
+  }
+  /* line 90, ../sass/_our-story.scss */
+  #our-story .mobile-story {
+    display: block;
+    width: 80%;
+    margin: 100px auto 0 auto;
+  }
 }
 
 /*our-story*/
@@ -264,6 +301,8 @@ p {
   /*alex*/
   /*melanie*/
   /*about-us-list*/
+  /*Tablet CSS*/
+  /*Tablet CSS*/
 }
 /* line 10, ../sass/_about-us.scss */
 #about-us .inner .alex {
@@ -298,6 +337,25 @@ p {
 /* line 38, ../sass/_about-us.scss */
 #about-us .inner .about-us-list li img {
   width: 60%;
+}
+/* line 45, ../sass/_about-us.scss */
+#about-us .inner .mobile-about-us {
+  display: none;
+}
+@media (max-width: 1000px) {
+  /* line 57, ../sass/_about-us.scss */
+  #about-us .inner .about-us-list li img {
+    width: 100%;
+  }
+  /* line 61, ../sass/_about-us.scss */
+  #about-us .inner .about-us-list li p {
+    display: none;
+  }
+  /* line 69, ../sass/_about-us.scss */
+  #about-us .inner .mobile-about-us {
+    display: block;
+    margin: 100px 0 0 0;
+  }
 }
 
 /*about-us*/
@@ -410,29 +468,40 @@ p {
   width: 48%;
 }
 @media (max-width: 1000px) {
-  /* line 110, ../sass/_wedding-info.scss */
+  /* line 1, ../sass/_wedding-info.scss */
+  #wedding-info {
+    width: 100%;
+  }
+  /* line 111, ../sass/_wedding-info.scss */
+  #wedding-info h3 {
+    width: 80%;
+    margin: 0 auto;
+  }
+  /* line 117, ../sass/_wedding-info.scss */
   #wedding-info .event-boxes {
     width: 100%;
   }
-  /* line 113, ../sass/_wedding-info.scss */
-  #wedding-info .event-boxes li {
-    font-size: 40px;
-  }
   /* line 120, ../sass/_wedding-info.scss */
-  #wedding-info .where-when {
-    width: 40%;
-  }
-  /* line 125, ../sass/_wedding-info.scss */
-  #wedding-info .where-when a i {
-    font-size: 36px;
+  #wedding-info .event-boxes li {
+    font-size: 56px;
+    margin: 0;
+    width: 32%;
   }
   /* line 128, ../sass/_wedding-info.scss */
-  #wedding-info .where-when a i h5 {
-    font-size: 36px;
+  #wedding-info .where-when {
+    width: 50%;
   }
-  /* line 142, ../sass/_wedding-info.scss */
+  /* line 133, ../sass/_wedding-info.scss */
+  #wedding-info .where-when a i {
+    font-size: 56px;
+  }
+  /* line 136, ../sass/_wedding-info.scss */
+  #wedding-info .where-when a i h5 {
+    font-size: 56px;
+  }
+  /* line 144, ../sass/_wedding-info.scss */
   #wedding-info .map {
-    width: 38%;
+    width: 28%;
   }
 }
 
@@ -446,6 +515,8 @@ p {
   /*bridesmaids*/
   /*groomsmen*/
   /*h3*/
+  /*Tablet CSS*/
+  /*Tablet CSS*/
 }
 /* line 5, ../sass/_wedding-party.scss */
 #wedding-party h5 {
@@ -500,6 +571,25 @@ p {
 #wedding-party h3 {
   padding: 0 0 100px 0;
 }
+@media (max-width: 1000px) {
+  /* line 64, ../sass/_wedding-party.scss */
+  #wedding-party .bridesmaids {
+    margin: 0;
+  }
+  /* line 67, ../sass/_wedding-party.scss */
+  #wedding-party .bridesmaids li {
+    width: 30%;
+  }
+  /* line 75, ../sass/_wedding-party.scss */
+  #wedding-party .groomsmen li {
+    width: 30%;
+  }
+  /* line 81, ../sass/_wedding-party.scss */
+  #wedding-party h5 {
+    font-size: 60px;
+    padding: 20px 0;
+  }
+}
 
 /*wedding-party*/
 /* line 1, ../sass/_rsvp.scss */
@@ -542,36 +632,51 @@ p {
 /* line 38, ../sass/_rsvp.scss */
 #rsvp .submit {
   background: #a6cac1;
+  background-color: #a6cac1;
   color: white;
   border: none;
-  height: 30PX;
+  height: 30px;
   width: 100px;
   display: block;
   border-radius: 0px;
 }
-/* line 49, ../sass/_rsvp.scss */
+/* line 50, ../sass/_rsvp.scss */
 #rsvp .i {
   width: 20%;
   display: inline-block;
 }
-/* line 55, ../sass/_rsvp.scss */
+/* line 56, ../sass/_rsvp.scss */
 #rsvp .attending {
   width: 70%;
   height: 40px;
 }
 @media (max-width: 1000px) {
-  /* line 64, ../sass/_rsvp.scss */
+  /* line 65, ../sass/_rsvp.scss */
   #rsvp #rsvp-form {
     width: 80%;
   }
-  /* line 69, ../sass/_rsvp.scss */
+  /* line 70, ../sass/_rsvp.scss */
   #rsvp .name, #rsvp .email, #rsvp .number {
     padding: 15px;
     font-size: 32px;
+    display: block;
+    width: 100%;
+    margin: 25px 0 50px 0;
   }
-  /* line 75, ../sass/_rsvp.scss */
+  /* line 79, ../sass/_rsvp.scss */
   #rsvp .attending {
-    font-size: 32px;
+    font-size: 60px;
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 25px 0 50px 0;
+    height: 100px;
+  }
+  /* line 89, ../sass/_rsvp.scss */
+  #rsvp .submit {
+    width: 100%;
+    font-size: 60px;
+    height: 80px;
   }
 }
 
@@ -633,7 +738,18 @@ p {
 @media (max-width: 1000px) {
   /* line 58, ../sass/_registry.scss */
   #registry h5 {
-    font-size: 36px;
+    font-size: 60px;
+  }
+  /* line 63, ../sass/_registry.scss */
+  #registry .honeyfund, #registry .target {
+    display: block;
+    float: none;
+    margin: 100px 0;
+    width: 100%;
+  }
+  /* line 69, ../sass/_registry.scss */
+  #registry .honeyfund img, #registry .target img {
+    width: 80%;
   }
 }
 
@@ -685,15 +801,51 @@ p {
 #gallery .hidden-photos {
   display: none;
 }
+/* line 46, ../sass/_gallery.scss */
+#gallery #gallery-one {
+  display: none;
+}
 @media (max-width: 1000px) {
   /* line 1, ../sass/_gallery.scss */
   #gallery {
     width: 100%;
   }
-  /* line 50, ../sass/_gallery.scss */
+  /* line 55, ../sass/_gallery.scss */
   #gallery h3 {
     width: 80%;
     margin: 0 auto;
+  }
+  /* line 61, ../sass/_gallery.scss */
+  #gallery #gallery-five {
+    display: none;
+  }
+  /* line 66, ../sass/_gallery.scss */
+  #gallery #gallery-one {
+    display: block;
+    padding: 100px 0 0 0;
+  }
+  /* line 70, ../sass/_gallery.scss */
+  #gallery #gallery-one .hidden-img {
+    display: none;
+  }
+  /* line 75, ../sass/_gallery.scss */
+  #gallery #gallery-one li {
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+  }
+  /* line 80, ../sass/_gallery.scss */
+  #gallery #gallery-one li i {
+    font-size: 160px;
+    color: #a6cac1;
+    display: inline-block;
+    padding: 0 25px;
+  }
+  /* line 88, ../sass/_gallery.scss */
+  #gallery #gallery-one li img {
+    width: 100%;
+    display: inline-block;
+    z-index: -10;
   }
 }
 
@@ -758,19 +910,22 @@ p {
   /* line 61, ../sass/_nav.scss */
   #nav .hamburger {
     position: fixed;
-    margin: -200px 0 0 0;
+    margin: -300px 0 0 0;
     padding: 25px;
-    font-size: 100px;
+    font-size: 128px;
     color: #a6cac1;
     z-index: 100;
     display: block;
     cursor: pointer;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.99);
+    text-align: left;
   }
-  /* line 73, ../sass/_nav.scss */
+  /* line 76, ../sass/_nav.scss */
   #nav .nav {
     display: none;
   }
-  /* line 78, ../sass/_nav.scss */
+  /* line 81, ../sass/_nav.scss */
   #nav .hamburger-nav {
     display: block;
     text-align: left;
@@ -778,19 +933,19 @@ p {
     width: 100%;
     color: #a6cac1;
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 40px;
+    font-size: 100px;
     font-weight: normal;
     margin: -100px auto 0 auto;
     position: fixed;
     background: rgba(255, 255, 255, 0.99);
     z-index: 99;
   }
-  /* line 92, ../sass/_nav.scss */
+  /* line 95, ../sass/_nav.scss */
   #nav .hamburger-nav li {
     display: block;
-    padding: 10px 0;
+    padding: 20px 0;
   }
-  /* line 98, ../sass/_nav.scss */
+  /* line 101, ../sass/_nav.scss */
   #nav .hamburger-nav a {
     color: #a6cac1;
     text-decoration: none;

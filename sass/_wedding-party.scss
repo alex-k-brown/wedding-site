@@ -57,4 +57,33 @@
 
   }/*h3*/
 
+  /*Tablet CSS*/
+  @media (max-width: 1000px) {
+
+
+    .bridesmaids {
+      margin: 0;
+
+      li {
+        width: 30%;
+
+      }
+    }
+
+    .groomsmen {
+
+      li {
+        width: 30%;
+
+      }
+    }
+
+    h5 {
+      font-size: 60px;
+      padding: 20px 0;
+
+    }
+
+  }/*Tablet CSS*/
+
 }/*wedding-party*/

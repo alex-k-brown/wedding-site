@@ -3,6 +3,11 @@
   padding: 100px 0 0 0;
   width: 80%;
 
+  .mobile-story {
+    display: none;
+
+  }
+
   .our-story-list {
     list-style-type: none;
     margin: 100px 0 0 0;
@@ -56,5 +61,39 @@
     display: none;
 
   }/*hidden-text*/
+
+  /*Tablet CSS*/
+  @media (max-width: 1000px) {
+    width: 100%;
+
+    h3 {
+      width: 80%;
+      margin: 0 auto;
+
+    }
+
+    .story-text {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    #beginning-text {
+      display: none;
+
+    }
+
+    h4 {
+      display: none;
+
+    }
+
+    .mobile-story {
+      display: block;
+      width: 80%;
+      margin: 100px auto 0 auto;
+
+    }
+
+  }/*Tablet CSS*/
 
 }/*our-story*/

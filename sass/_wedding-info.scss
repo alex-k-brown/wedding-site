@@ -106,41 +106,43 @@
 
   /*Tablet CSS*/
   @media (max-width: 1000px) {
+    width: 100%;
+
+    h3 {
+      width: 80%;
+      margin: 0 auto;
+
+    }
 
     .event-boxes {
       width: 100%;
 
       li {
-        font-size: 40px;
+        font-size: 56px;
+        margin: 0;
+        width: 32%;
 
       }
-
     }
 
     .where-when {
-      width: 40%;
+      width: 50%;
 
       a {
 
         i {
-          font-size: 36px;
+          font-size: 56px;
 
           h5 {
-            font-size: 36px;
+            font-size: 56px;
 
           }
-
         }
-
-
       }
-
-
-
     }
 
     .map {
-      width: 38%;
+      width: 28%;
 
     }
 
