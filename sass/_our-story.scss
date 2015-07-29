@@ -65,16 +65,17 @@
   /*Tablet CSS*/
   @media (max-width: 1000px) {
     width: 100%;
+    margin: 300px auto 0 auto;
+    padding: 100px 0 100px 0;
 
     h3 {
       width: 80%;
-      margin: 0 auto;
+      margin: 0 auto 200px auto;
 
     }
 
     .story-text {
       width: 80%;
-      margin: 0 auto;
     }
 
     #beginning-text {
@@ -90,7 +91,7 @@
     .mobile-story {
       display: block;
       width: 80%;
-      margin: 100px auto 0 auto;
+      margin: 200px auto 0 auto;
 
     }
 

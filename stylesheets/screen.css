@@ -97,7 +97,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   /* line 26, ../sass/_header.scss */
   #header .logo {
     width: 100%;
-    margin: 300px auto 100px auto;
+    margin: 300px auto 200px auto;
   }
 }
 
@@ -259,30 +259,31 @@ p {
   /* line 1, ../sass/_our-story.scss */
   #our-story {
     width: 100%;
+    margin: 300px auto 0 auto;
+    padding: 100px 0 100px 0;
   }
-  /* line 69, ../sass/_our-story.scss */
+  /* line 71, ../sass/_our-story.scss */
   #our-story h3 {
     width: 80%;
-    margin: 0 auto;
+    margin: 0 auto 200px auto;
   }
-  /* line 75, ../sass/_our-story.scss */
+  /* line 77, ../sass/_our-story.scss */
   #our-story .story-text {
     width: 80%;
-    margin: 0 auto;
   }
-  /* line 80, ../sass/_our-story.scss */
+  /* line 81, ../sass/_our-story.scss */
   #our-story #beginning-text {
     display: none;
   }
-  /* line 85, ../sass/_our-story.scss */
+  /* line 86, ../sass/_our-story.scss */
   #our-story h4 {
     display: none;
   }
-  /* line 90, ../sass/_our-story.scss */
+  /* line 91, ../sass/_our-story.scss */
   #our-story .mobile-story {
     display: block;
     width: 80%;
-    margin: 100px auto 0 auto;
+    margin: 200px auto 0 auto;
   }
 }
 
@@ -343,15 +344,28 @@ p {
   display: none;
 }
 @media (max-width: 1000px) {
-  /* line 57, ../sass/_about-us.scss */
+  /* line 6, ../sass/_about-us.scss */
+  #about-us .inner {
+    padding: 100px 0;
+  }
+  /* line 54, ../sass/_about-us.scss */
+  #about-us .inner h3 {
+    padding: 0 0 100px 0;
+  }
+  /* line 63, ../sass/_about-us.scss */
+  #about-us .inner .about-us-list li h4 {
+    text-align: center;
+  }
+  /* line 68, ../sass/_about-us.scss */
   #about-us .inner .about-us-list li img {
     width: 100%;
+    padding: 0 0 100px 0;
   }
-  /* line 61, ../sass/_about-us.scss */
+  /* line 73, ../sass/_about-us.scss */
   #about-us .inner .about-us-list li p {
     display: none;
   }
-  /* line 69, ../sass/_about-us.scss */
+  /* line 81, ../sass/_about-us.scss */
   #about-us .inner .mobile-about-us {
     display: block;
     margin: 100px 0 0 0;
@@ -471,35 +485,37 @@ p {
   /* line 1, ../sass/_wedding-info.scss */
   #wedding-info {
     width: 100%;
+    padding: 200px 0;
   }
-  /* line 111, ../sass/_wedding-info.scss */
+  /* line 112, ../sass/_wedding-info.scss */
   #wedding-info h3 {
     width: 80%;
-    margin: 0 auto;
+    margin: 0 auto 100px auto;
   }
-  /* line 117, ../sass/_wedding-info.scss */
+  /* line 118, ../sass/_wedding-info.scss */
   #wedding-info .event-boxes {
     width: 100%;
+    padding: 100px 0 0 0;
   }
-  /* line 120, ../sass/_wedding-info.scss */
+  /* line 122, ../sass/_wedding-info.scss */
   #wedding-info .event-boxes li {
     font-size: 56px;
     margin: 0;
     width: 32%;
   }
-  /* line 128, ../sass/_wedding-info.scss */
+  /* line 130, ../sass/_wedding-info.scss */
   #wedding-info .where-when {
     width: 50%;
   }
-  /* line 133, ../sass/_wedding-info.scss */
+  /* line 135, ../sass/_wedding-info.scss */
   #wedding-info .where-when a i {
     font-size: 56px;
   }
-  /* line 136, ../sass/_wedding-info.scss */
+  /* line 138, ../sass/_wedding-info.scss */
   #wedding-info .where-when a i h5 {
     font-size: 56px;
   }
-  /* line 144, ../sass/_wedding-info.scss */
+  /* line 146, ../sass/_wedding-info.scss */
   #wedding-info .map {
     width: 28%;
   }
@@ -572,19 +588,27 @@ p {
   padding: 0 0 100px 0;
 }
 @media (max-width: 1000px) {
+  /* line 1, ../sass/_wedding-party.scss */
+  #wedding-party {
+    padding: 200px 0;
+  }
   /* line 64, ../sass/_wedding-party.scss */
+  #wedding-party h3 {
+    padding: 0 0 200px 0;
+  }
+  /* line 69, ../sass/_wedding-party.scss */
   #wedding-party .bridesmaids {
     margin: 0;
   }
-  /* line 67, ../sass/_wedding-party.scss */
+  /* line 72, ../sass/_wedding-party.scss */
   #wedding-party .bridesmaids li {
     width: 30%;
   }
-  /* line 75, ../sass/_wedding-party.scss */
+  /* line 80, ../sass/_wedding-party.scss */
   #wedding-party .groomsmen li {
     width: 30%;
   }
-  /* line 81, ../sass/_wedding-party.scss */
+  /* line 86, ../sass/_wedding-party.scss */
   #wedding-party h5 {
     font-size: 60px;
     padding: 20px 0;
@@ -651,11 +675,17 @@ p {
   height: 40px;
 }
 @media (max-width: 1000px) {
-  /* line 65, ../sass/_rsvp.scss */
-  #rsvp #rsvp-form {
-    width: 80%;
+  /* line 1, ../sass/_rsvp.scss */
+  #rsvp {
+    padding: 200px 0;
   }
-  /* line 70, ../sass/_rsvp.scss */
+  /* line 66, ../sass/_rsvp.scss */
+  #rsvp #rsvp-form {
+    width: 90%;
+    margin: 0 auto;
+    padding: 50px;
+  }
+  /* line 73, ../sass/_rsvp.scss */
   #rsvp .name, #rsvp .email, #rsvp .number {
     padding: 15px;
     font-size: 32px;
@@ -663,7 +693,11 @@ p {
     width: 100%;
     margin: 25px 0 50px 0;
   }
-  /* line 79, ../sass/_rsvp.scss */
+  /* line 82, ../sass/_rsvp.scss */
+  #rsvp .i {
+    width: 100%;
+  }
+  /* line 87, ../sass/_rsvp.scss */
   #rsvp .attending {
     font-size: 60px;
     display: block;
@@ -672,7 +706,7 @@ p {
     margin: 25px 0 50px 0;
     height: 100px;
   }
-  /* line 89, ../sass/_rsvp.scss */
+  /* line 97, ../sass/_rsvp.scss */
   #rsvp .submit {
     width: 100%;
     font-size: 60px;
@@ -736,18 +770,26 @@ p {
   text-decoration: none;
 }
 @media (max-width: 1000px) {
-  /* line 58, ../sass/_registry.scss */
+  /* line 1, ../sass/_registry.scss */
+  #registry {
+    padding: 200px 0;
+  }
+  /* line 59, ../sass/_registry.scss */
+  #registry h3 {
+    padding: 0 0 100px 0;
+  }
+  /* line 64, ../sass/_registry.scss */
   #registry h5 {
     font-size: 60px;
   }
-  /* line 63, ../sass/_registry.scss */
+  /* line 69, ../sass/_registry.scss */
   #registry .honeyfund, #registry .target {
     display: block;
     float: none;
-    margin: 100px 0;
+    margin: 200px 0;
     width: 100%;
   }
-  /* line 69, ../sass/_registry.scss */
+  /* line 75, ../sass/_registry.scss */
   #registry .honeyfund img, #registry .target img {
     width: 80%;
   }
@@ -809,39 +851,40 @@ p {
   /* line 1, ../sass/_gallery.scss */
   #gallery {
     width: 100%;
+    padding: 200px 0;
   }
-  /* line 55, ../sass/_gallery.scss */
+  /* line 56, ../sass/_gallery.scss */
   #gallery h3 {
     width: 80%;
     margin: 0 auto;
   }
-  /* line 61, ../sass/_gallery.scss */
+  /* line 62, ../sass/_gallery.scss */
   #gallery #gallery-five {
     display: none;
   }
-  /* line 66, ../sass/_gallery.scss */
+  /* line 67, ../sass/_gallery.scss */
   #gallery #gallery-one {
     display: block;
     padding: 100px 0 0 0;
   }
-  /* line 70, ../sass/_gallery.scss */
+  /* line 71, ../sass/_gallery.scss */
   #gallery #gallery-one .hidden-img {
     display: none;
   }
-  /* line 75, ../sass/_gallery.scss */
+  /* line 76, ../sass/_gallery.scss */
   #gallery #gallery-one li {
     width: 80%;
     margin: 50px auto;
     text-align: center;
   }
-  /* line 80, ../sass/_gallery.scss */
+  /* line 81, ../sass/_gallery.scss */
   #gallery #gallery-one li i {
     font-size: 160px;
     color: #a6cac1;
     display: inline-block;
     padding: 0 25px;
   }
-  /* line 88, ../sass/_gallery.scss */
+  /* line 89, ../sass/_gallery.scss */
   #gallery #gallery-one li img {
     width: 100%;
     display: inline-block;
@@ -935,7 +978,7 @@ p {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 100px;
     font-weight: normal;
-    margin: -100px auto 0 auto;
+    margin: -300px auto 0 auto;
     position: fixed;
     background: rgba(255, 255, 255, 0.99);
     z-index: 99;
@@ -956,7 +999,7 @@ p {
 /* line 1, ../sass/_footer.scss */
 #footer {
   background: #fafafa;
-  padding: 100px 0;
+  padding: 500px 0;
 }
 
 /*footer*/

@@ -59,7 +59,12 @@
 
   /*Tablet CSS*/
   @media (max-width: 1000px) {
+    padding: 200px 0;
 
+    h3 {
+      padding: 0 0 200px 0;
+
+    }
 
     .bridesmaids {
       margin: 0;

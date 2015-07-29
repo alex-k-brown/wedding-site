@@ -61,9 +61,12 @@
 
   /*Tablet CSS*/
   @media (max-width: 1000px) {
+    padding: 200px 0;
 
     #rsvp-form {
-      width: 80%;
+      width: 90%;
+      margin: 0 auto;
+      padding: 50px;
 
     }
 
@@ -73,6 +76,11 @@
       display: block;
       width: 100%;
       margin: 25px 0 50px 0;
+
+    }
+
+    .i {
+      width: 100%;
 
     }
 

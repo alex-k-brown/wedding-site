@@ -107,15 +107,17 @@
   /*Tablet CSS*/
   @media (max-width: 1000px) {
     width: 100%;
+    padding: 200px 0;
 
     h3 {
       width: 80%;
-      margin: 0 auto;
+      margin: 0 auto 100px auto;
 
     }
 
     .event-boxes {
       width: 100%;
+      padding: 100px 0 0 0;
 
       li {
         font-size: 56px;

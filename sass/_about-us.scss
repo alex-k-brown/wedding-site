@@ -49,13 +49,25 @@
 
     /*Tablet CSS*/
     @media (max-width: 1000px) {
+      padding: 100px 0;
+
+      h3 {
+        padding: 0 0 100px 0;
+
+      }
 
       .about-us-list {
 
         li {
 
+          h4 {
+            text-align: center;
+
+          }
+
           img {
             width: 100%;
+            padding: 0 0 100px 0;
 
           }
           p {
