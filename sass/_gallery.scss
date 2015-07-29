@@ -43,4 +43,15 @@
 
   }/*hidden-photos*/
 
+  /*Tablet CSS*/
+  @media (max-width: 1000px) {
+    width: 100%;
+
+    h3 {
+      width: 80%;
+      margin: 0 auto;
+
+    }
+  }/*Tablet CSS*/
+
 }/*gallery*/

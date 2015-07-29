@@ -15,15 +15,27 @@
 </head>
 <body>
     <div id="nav">
-        <ul class="nav">
+        <div id="hamburger" class="hamburger" onclick="hamburger()">
+            <i class="fa fa-bars"></i>
+        </div><!--hamburger-->
+        <ul id="hamburger-nav" class="nav">
+            <li><a href="#">Home</a></li>
             <li><a href="#our-story">Our Story</a></li>
             <li><a href="#about-us">About Us</a></li>
             <li><a href="#wedding-info">Wedding Info</a></li>
-            <li><a href="#wedding-party">Wedding Party</a></li>
             <li><a href="#rsvp">RSVP</a></li>
             <li><a href="#registry">Registry</a></li>
             <li><a href="#gallery">Gallery</a></li>
         </ul>
+        <!--<ul class="nav">-->
+            <!--<li><a href="#our-story">Our Story</a></li>-->
+            <!--<li><a href="#about-us">About Us</a></li>-->
+            <!--<li><a href="#wedding-info">Wedding Info</a></li>-->
+            <!--<li><a href="#wedding-party">Wedding Party</a></li>-->
+            <!--<li><a href="#rsvp">RSVP</a></li>-->
+            <!--<li><a href="#registry">Registry</a></li>-->
+            <!--<li><a href="#gallery">Gallery</a></li>-->
+        <!--</ul>-->
         <div id="large-image" class="hidden-image">
             <img src="img/gallery/g1.jpg">
         </div><!--large-image-->
@@ -377,6 +389,26 @@
 <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script>
+    $(function() {
+        $("a[href=#menuExpand]").click(function(e) {
+            $(".menu").toggleClass("menuOpen");
+            e.preventDefault();
+        });
+    });
+</script>
+<script>
+    function hamburger() {
+        var className = document.getElementById('hamburger-nav').className;
+        console.log(className);
+
+        if (className == 'nav') {
+            document.getElementById('hamburger-nav').setAttribute('class', 'hamburger-nav')
+        } else {
+            document.getElementById('hamburger-nav').setAttribute('class', 'nav')
+        }
+
+    }
+
     function ourStory(idName) {
         console.log(idName.id);
         var textName = idName.id + '-text';

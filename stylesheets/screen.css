@@ -67,6 +67,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
+/* line 1, ../sass/_header.scss */
+#header {
+  /*Tablet CSS*/
+  /*Tablet CSS*/
+  /*Phone CSS*/
+  /*Phone CSS*/
+}
 /* line 3, ../sass/_header.scss */
 #header .logo {
   text-align: center;
@@ -85,6 +92,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   width: 25%;
   margin: -200px 0 0 0;
   width: 100%;
+}
+@media (max-width: 1000px) {
+  /* line 26, ../sass/_header.scss */
+  #header .logo {
+    width: 70%;
+    margin: 200px auto 100px auto;
+  }
 }
 
 /* line 1, ../sass/_text.scss */
@@ -135,21 +149,31 @@ p {
 /*Tablet CSS*/
 @media (max-width: 1000px) {
   /* line 45, ../sass/_text.scss */
+  h1 {
+    font-size: 64px;
+  }
+
+  /* line 50, ../sass/_text.scss */
+  h2 {
+    font-size: 72px;
+  }
+
+  /* line 55, ../sass/_text.scss */
   h3 {
     font-size: 64px;
   }
 
-  /* line 49, ../sass/_text.scss */
+  /* line 59, ../sass/_text.scss */
   h4 {
     font-size: 40px;
   }
 
-  /* line 54, ../sass/_text.scss */
+  /* line 64, ../sass/_text.scss */
   h5 {
     font-size: 24px;
   }
 
-  /* line 59, ../sass/_text.scss */
+  /* line 69, ../sass/_text.scss */
   p {
     font-size: 24px;
     line-height: 48px;
@@ -157,6 +181,12 @@ p {
 }
 /*Tablet CSS*/
 /*Phone CSS*/
+@media (max-width: 800px) {
+  /* line 80, ../sass/_text.scss */
+  h1 {
+    font-size: 56px;
+  }
+}
 /*Phone CSS*/
 /* line 1, ../sass/_our-story.scss */
 #our-story {
@@ -392,7 +422,15 @@ p {
   #wedding-info .where-when {
     width: 40%;
   }
-  /* line 124, ../sass/_wedding-info.scss */
+  /* line 125, ../sass/_wedding-info.scss */
+  #wedding-info .where-when a i {
+    font-size: 36px;
+  }
+  /* line 128, ../sass/_wedding-info.scss */
+  #wedding-info .where-when a i h5 {
+    font-size: 36px;
+  }
+  /* line 142, ../sass/_wedding-info.scss */
   #wedding-info .map {
     width: 38%;
   }
@@ -509,28 +547,29 @@ p {
   height: 30PX;
   width: 100px;
   display: block;
+  border-radius: 0px;
 }
-/* line 48, ../sass/_rsvp.scss */
+/* line 49, ../sass/_rsvp.scss */
 #rsvp .i {
   width: 20%;
   display: inline-block;
 }
-/* line 54, ../sass/_rsvp.scss */
+/* line 55, ../sass/_rsvp.scss */
 #rsvp .attending {
   width: 70%;
   height: 40px;
 }
 @media (max-width: 1000px) {
-  /* line 63, ../sass/_rsvp.scss */
+  /* line 64, ../sass/_rsvp.scss */
   #rsvp #rsvp-form {
     width: 80%;
   }
-  /* line 68, ../sass/_rsvp.scss */
+  /* line 69, ../sass/_rsvp.scss */
   #rsvp .name, #rsvp .email, #rsvp .number {
     padding: 15px;
     font-size: 32px;
   }
-  /* line 74, ../sass/_rsvp.scss */
+  /* line 75, ../sass/_rsvp.scss */
   #rsvp .attending {
     font-size: 32px;
   }
@@ -545,6 +584,8 @@ p {
   /*honeyfund, target*/
   /*honeyfund*/
   /*a*/
+  /*Tablet CSS*/
+  /*Tablet CSS*/
 }
 /* line 5, ../sass/_registry.scss */
 #registry h3 {
@@ -589,6 +630,12 @@ p {
   color: #a6cac1;
   text-decoration: none;
 }
+@media (max-width: 1000px) {
+  /* line 58, ../sass/_registry.scss */
+  #registry h5 {
+    font-size: 36px;
+  }
+}
 
 /*registry*/
 /* line 1, ../sass/_gallery.scss */
@@ -598,6 +645,8 @@ p {
   padding: 100px 0;
   /*photos*/
   /*hidden-photos*/
+  /*Tablet CSS*/
+  /*Tablet CSS*/
 }
 /* line 6, ../sass/_gallery.scss */
 #gallery .photos {
@@ -636,6 +685,17 @@ p {
 #gallery .hidden-photos {
   display: none;
 }
+@media (max-width: 1000px) {
+  /* line 1, ../sass/_gallery.scss */
+  #gallery {
+    width: 100%;
+  }
+  /* line 50, ../sass/_gallery.scss */
+  #gallery h3 {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
 
 /*gallery*/
 /* line 1, ../sass/_nav.scss */
@@ -649,6 +709,10 @@ p {
   /*Phone CSS*/
 }
 /* line 5, ../sass/_nav.scss */
+#nav .hamburger {
+  display: none;
+}
+/* line 9, ../sass/_nav.scss */
 #nav .nav {
   color: #a6cac1;
   font-family: 'Josefin Sans', sans-serif;
@@ -661,17 +725,17 @@ p {
   background: rgba(255, 255, 255, 0.9);
   padding: 20px 0;
 }
-/* line 19, ../sass/_nav.scss */
+/* line 23, ../sass/_nav.scss */
 #nav .nav li {
   display: inline-block;
-  padding: 0 3%;
+  padding: 0 2%;
 }
-/* line 23, ../sass/_nav.scss */
+/* line 27, ../sass/_nav.scss */
 #nav .nav li a {
   color: #a6cac1;
   text-decoration: none;
 }
-/* line 32, ../sass/_nav.scss */
+/* line 36, ../sass/_nav.scss */
 #nav .large-image {
   width: 100%;
   background: rgba(0, 0, 0, 0.5);
@@ -681,14 +745,56 @@ p {
   position: fixed;
   z-index: 1000;
 }
-/* line 41, ../sass/_nav.scss */
+/* line 45, ../sass/_nav.scss */
 #nav .large-image img {
   width: 20%;
   margin: 0 auto;
 }
-/* line 49, ../sass/_nav.scss */
+/* line 53, ../sass/_nav.scss */
 #nav .hidden-image {
   display: none;
+}
+@media (max-width: 1000px) {
+  /* line 61, ../sass/_nav.scss */
+  #nav .hamburger {
+    position: fixed;
+    margin: -200px 0 0 0;
+    padding: 25px;
+    font-size: 100px;
+    color: #a6cac1;
+    z-index: 100;
+    display: block;
+    cursor: pointer;
+  }
+  /* line 73, ../sass/_nav.scss */
+  #nav .nav {
+    display: none;
+  }
+  /* line 78, ../sass/_nav.scss */
+  #nav .hamburger-nav {
+    display: block;
+    text-align: left;
+    padding: 50px 0 25px 75px;
+    width: 100%;
+    color: #a6cac1;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 40px;
+    font-weight: normal;
+    margin: -100px auto 0 auto;
+    position: fixed;
+    background: rgba(255, 255, 255, 0.99);
+    z-index: 99;
+  }
+  /* line 92, ../sass/_nav.scss */
+  #nav .hamburger-nav li {
+    display: block;
+    padding: 10px 0;
+  }
+  /* line 98, ../sass/_nav.scss */
+  #nav .hamburger-nav a {
+    color: #a6cac1;
+    text-decoration: none;
+  }
 }
 
 /*nav*/

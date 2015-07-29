@@ -20,4 +20,20 @@
     width: 100%;
   }
 
+  /*Tablet CSS*/
+  @media (max-width: 1000px) {
+
+    .logo {
+      width: 70%;
+      margin: 200px auto 100px auto;
+
+    }
+
+  }/*Tablet CSS*/
+
+  /*Phone CSS*/
+  @media (max-width: 800px) {
+
+  }/*Phone CSS*/
+
 }

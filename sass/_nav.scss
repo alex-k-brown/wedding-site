@@ -2,6 +2,10 @@
   width: 100%;
   text-align: center;
 
+  .hamburger {
+    display: none;
+  }
+
   .nav {
     color: #a6cac1;
     font-family: 'Josefin Sans', sans-serif;
@@ -18,7 +22,7 @@
 
     li {
       display: inline-block;
-      padding: 0 3%;
+      padding: 0 2%;
 
       a {
         color: #a6cac1;
@@ -52,12 +56,59 @@
   }/*hidden-image*/
 
   /*Tablet CSS*/
-  @media (max-width: 800px) {
+  @media (max-width: 1000px) {
+
+    .hamburger {
+      position: fixed;
+      margin: -200px 0 0 0;
+      padding: 25px;
+      font-size: 100px;
+      color: #a6cac1;
+      z-index: 100;
+      display: block;
+      cursor: pointer;
+
+    }
+
+    .nav {
+      display: none;
+
+    }
+
+    .hamburger-nav {
+      display: block;
+      text-align: left;
+      padding: 50px 0 25px 75px;
+      width: 100%;
+      color: #a6cac1;
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 40px;
+      font-weight: normal;
+      margin: -100px auto 0 auto;
+      position: fixed;
+      background: rgba(255, 255, 255, .99);
+      z-index: 99;
+
+      li {
+        display: block;
+        padding: 10px 0;
+
+      }
+
+      a {
+        color: #a6cac1;
+        text-decoration: none;
+
+      }
+
+    }
 
   }/*Tablet CSS*/
 
   /*Phone CSS*/
-  @media (max-width: 800px) {
+  @media (max-width: 1000px) {
 
   }/*Phone CSS*/
+
+
 }/*nav*/
